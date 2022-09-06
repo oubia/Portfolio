@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@100&family=Qwitcher+Grypen:wght@700&display=swap');
+
+:root {
+    --bg-black-900:#f2f2fc;
+    --bg-black-100:#fdf9ff;
+    --bg-black-50:#e8dfec;
+    --text-black-900:#302e4d;
+    --text-black-700:#504e70;
+    --skin-color:#ec1839;
+
+}
+
+body {
+    line-height:1.5;
+    font-size:16px;
+
+}
+
+*{
+    margin:0;
+    padding:0;
+    outline:none;
+    text-decoration: none;
+    box-sizing:border-box;
+    
+}
+
+ul{
+    list-style: none;
+}
+
+::before,::after{
+    box-sizing: border-box;
+}
+
+.section {
+    background:var(--bg-black-900);
+    min-height:100vh;
+    display:block;
+    position: fixed;
+    left: 270px;
+    top:0;
+    right: 0;
+    z-index: index 0;
+    opacity: 1;
+}
+
+.Asidedev{
+    width:270px;
+    background:var(--bg-black-100);
+    position:fixed;
+    left:0;
+    top:0;
+    z-index:10;
+    height: 100%;
+    padding:30px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border-right: 1px solid var(--bg-black-50);
+}
+
+.Asidedev .logo{
+    position:absolute;
+    top:50px;
+    font-size: 30px;
+    text-transform: capitalize;
+
+}
+
+.Asidedev .logo a {
+    color: var(--text-black-900);
+    font-weight: 700;
+    padding:15px 20px;
+    font-size: 30px;
+    letter-spacing: 3px;
+    position: relative;
+}
+
+.ubi{
+    font-family: 'Antonio';
+    font-size:25px;
+    transition-duration: 3s;
+}
+
+
+
+.Ou{
+    font-family: 'Qwitcher Grypen', cursive;
+    font-size:50px;
+    transition-duration: 3s;
+}
+
+
+.Asidedev .logo a::before{
+    content:'';
+    position:absolute;
+    width:100px;
+    height:0px;
+    border-bottom: 5px solid var(--skin-color);
+    border-left: 5px solid var(--skin-color);
+    bottom:0;
+    left:0;
+    transition-duration: 3s;
+}
+.Asidedev .logo a::after{
+    content:'';
+    position:absolute;
+    width:100px;
+    height:0px;
+    border-top: 5px solid var(--skin-color);
+    border-right: 5px solid var(--skin-color);
+    top:0;
+    right:0;
+    transition-duration: 3s;
+}
+
+.Asidedev .logo a:hover::after{
+
+        content:'';
+        position:absolute;
+        width:0px;
+        height:60px;
+        border-right: 5px solid var(--skin-color);
+        top:0;
+        right:0;
+        transition-duration: 3s;
+
+}
+
+.Asidedev .logo a:hover::before{
+    content:'';
+    position:absolute;
+    width:0px;
+    height:60px;
+    border-bottom: 5px solid var(--skin-color);
+    border-left: 5px solid var(--skin-color);
+    bottom:0;
+    left:0;
+    transition-duration: 3s;
+}
+
+.Asidedev .logo a:hover .ubi{
+    font-family: 'Qwitcher Grypen';
+    font-size:50px;
+    transition-duration: 1.5s;
+}
+
+.Asidedev .nav-toggler{
+    height: 40px;
+    width:45px;
+    border: 1px solid var(--bg-black-50);
+    cursor: pointer;
+    position:fixed;
+    left: 300px;
+    top: 20px;
+    border-radius: 5px;
+    background: var(--bg-black-100);
+    display:none;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.Asidedev .nav-toggler span{
+    height: 2px;
+    width: 18px;
+    background: var(--skin-color);
+    display:inline-block;
+    position:relative;
+}
+
+.Asidedev .nav-toggler span::before{
+    content:'';
+    height: 2px;
+    width: 18px;
+    background: var(--skin-color);
+    position: absolute;
+    top: -6px;
+    left: 0;
+}
+
+.Asidedev .nav-toggler span::after{
+    content:'';
+    height: 2px;
+    width: 18px;
+    background: var(--skin-color);
+    position: absolute;
+    top: 6px;
+    left: 0;
+}
+
+
+
+.Asidedev .nav{
+    margin-top: 50px;
+}
+
+.Asidedev .nav li{
+    margin-bottom: 20px;
+    display: block;
+}
+
+.Asidedev .nav li a {
+    font-size: 16px;
+    font-weight: 500;
+    border-bottom: 1px solid var(--skin-color);
+    color: var(--text-black-900);
+    display: block;
+    padding: 5px 15px;
+}
+
+.Asidedev .nav li a.active {
+    
+    color: var(--skin-color);
+    
+}
+
+.Asidedev .nav li a .FontAwesomeIcon{
+    
+    margin-right: 15px;
+    
+}
