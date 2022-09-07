@@ -7,7 +7,8 @@ function App() {
   return (
     <div className="App">
       <Aside/>
-     <main className="flex-item-1 center-content">
+     <main className="flex-item-1 center-content" id='main'>
+    
       <Home/>
      </main>
 
