@@ -10,8 +10,8 @@ function App() {
       <Aside/>
      <main className="flex-item-1 center-content" id='main'>
     
-      {/* <Home/> */}
-      <About/>
+      <Home/>
+      {/* <About/> */}
 
      </main>
 
