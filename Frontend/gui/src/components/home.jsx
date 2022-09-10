@@ -6,11 +6,11 @@ import {ArrowRightCircle} from 'react-bootstrap-icons';
 import headerImg from "../assets/headrSvg.svg"
 
 
-function Home() {
+function Home() { 
 
   const [loopNum,setLoopNum] = useState(0);
   const [isDeleting,setIsDeleting] = useState(false);
-  const toRotate = ['Web developer','Web designer','UI/UX Designer'];
+  const toRotate = ['Web developer','Mobiel developer','Data analysist'];
   const [text,setText] = useState('');
   const [delta,setDelta] = useState(30 - Math.random()*100);
   const period = 2000;

@@ -47,7 +47,7 @@ ul{
 
 .Asidedev{
     width:270px;
-    background:var(--bg-black-100);
+
     position:fixed;
     left:0;
     top:0;
@@ -57,7 +57,7 @@ ul{
     display:flex;
     justify-content:center;
     align-items:center;
-    border-right: 1px solid var(--bg-black-50);
+
 }
 
 .Asidedev .logo{
@@ -146,7 +146,7 @@ ul{
     transition-duration: 1.5s;
 }
 
-.Asidedev .nav-toggler{
+/* .Asidedev .nav-toggler{
     height: 40px;
     width:45px;
     border: 1px solid var(--bg-black-50);
@@ -188,7 +188,7 @@ ul{
     position: absolute;
     top: 6px;
     left: 0;
-}
+} */
 
 
 
@@ -200,12 +200,13 @@ ul{
 .Asidedev .nav li{
     margin-bottom: 20px;
     display: block;
+   
 }
 
 .Asidedev .nav li a {
     font-size: 16px;
     font-weight: 500;
-    border-bottom: 1px solid var(--skin-color);
+
     color: var(--text-black-900);
     display: block;
     padding: 5px 15px;
@@ -231,5 +232,10 @@ ul{
 .Asidedev .nav li a .FontAwesomeIcon{
     
     margin-right: 15px;
+    border-radius:50% ;
+    padding:15px;
+    background-color:#f2f2fc7e;
+    border: solid var(#f2f2fc7e);
     
+
 }
