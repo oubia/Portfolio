@@ -19,11 +19,11 @@ function Aside() {
             </span>
         </div>
             <ul className='nav'>
-              <li><a href='#' className='active'><FontAwesomeIcon className='FontAwesomeIcon' icon={faHome} />Home</a></li>
-              <li><a href='#' ><FontAwesomeIcon className='FontAwesomeIcon' icon={faUser} />About</a></li>
-              <li><a href='#' ><FontAwesomeIcon className='FontAwesomeIcon' icon={faList} />Services</a></li>
-              <li><a href='#' ><FontAwesomeIcon className='FontAwesomeIcon' icon={faBriefcase} />Portfolio</a></li>
-              <li><a href='#' ><FontAwesomeIcon className='FontAwesomeIcon' icon={faComments} />Contact</a></li>
+              <li><a href='#' className='active'><FontAwesomeIcon className='FontAwesomeIcon' icon={faHome} /><span>Home</span></a></li>
+              <li><a href='#' ><FontAwesomeIcon className='FontAwesomeIcon' icon={faUser} /><span>About</span></a></li>
+              <li><a href='#' ><FontAwesomeIcon className='FontAwesomeIcon' icon={faList} /><span>Services</span></a></li>
+              <li><a href='#' ><FontAwesomeIcon className='FontAwesomeIcon' icon={faBriefcase} /><span>Portfolio</span></a></li>
+              <li><a href='#' ><FontAwesomeIcon className='FontAwesomeIcon' icon={faComments} /><span>Contact</span></a></li>
 
             </ul>
     </aside>
