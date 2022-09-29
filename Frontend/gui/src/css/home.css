@@ -3,7 +3,7 @@
 body {
     line-height:1.5;
     font-size:16px;
-    background-image: url('../assets/background.svg');
+    background-image: url('../assets/AbstractPaper.svg');
 
 }
 #main{
@@ -23,19 +23,15 @@ body {
 .home-image img {
     padding-left:0px;
     height:50vh;
-
-    
-    
 }
 
 #main section .row .home-description .tagline{
     color:white;
-
     font-size: 25px;
     font-family: 'Roboto Mono', monospace;
 }
 #main section .row .home-description .warp{
-    color:rgb(174, 235, 84);
+    color:#905fe6fa;
     font-size: 20px;
     font-family: 'Roboto Mono', monospace;
 }
@@ -43,7 +39,7 @@ body {
 #main section .row .home-description h1{
     margin-top: 15px;
     margin-bottom: 20px;
-    color:rgb(174, 235, 84);
+    color:#905fe6fa;
     font-size: 20px;
     font-family: 'Roboto Mono', monospace;
 }
@@ -54,11 +50,11 @@ body {
     text-align: justify;
 
 }
-.connectBtn{
+/* .connectBtn{
     position: relative;
     display: inline-block;
     padding: 15px 20px;
-    color: rgb(174, 235, 84);
+    color: #905fe6fa;
     text-decoration: none;
     text-transform: uppercase;
     transition: 0.5s;
@@ -70,12 +66,12 @@ body {
    
 }
 .connectBtn:hover{
-    background: rgb(174, 235, 84);
+    background: #905fe6fa;
     color: #050801;
-    box-shadow: 0 0 5px rgb(174, 235, 84),
-                0 0 25px rgb(174, 235, 84),
-                0 0 50px rgb(174, 235, 84),
-                0 0 200px rgb(174, 235, 84);
+    box-shadow: 0 0 5px #905fe6fa,
+                0 0 25px #905fe6fa,
+                0 0 50px #905fe6fa,
+                0 0 200px #905fe6fa;
      -webkit-box-reflect:below 1px linear-gradient(transparent, #0005);
      transition-duration: 2s;
 
@@ -93,7 +89,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(90deg,transparent,rgb(174, 235, 84));
+    background: linear-gradient(90deg,transparent,#784AC9);
     animation: animate1 1.5s linear infinite;
 }
 @keyframes animate1{
@@ -103,4 +99,4 @@ body {
     50%,100%{
         left: 100%;
     }
-}
+}  */

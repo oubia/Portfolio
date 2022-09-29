@@ -1,4 +1,9 @@
-:root
-{
-    --skin-color:#ec1839;
+:root {
+    --bg-black-900:#f2f2fc;
+    --bg-black-100:#363638;
+    --bg-black-50:#19181a;
+    --text-black-900:white;
+    --text-black-700:#504e70;
+    --skin-color:#6515f0;
+    
 }
