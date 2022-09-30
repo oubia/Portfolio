@@ -3,7 +3,7 @@ import React from 'react';
 import {Container, Row,Col} from 'react-bootstrap'
 import '../css/home.css';
 import {ArrowRightCircle} from 'react-bootstrap-icons';
-import headerImg from "../assets/headrSvg.svg"
+import headerImg from "../assets/avatar.png"
 
 
 function Home() { 
@@ -44,21 +44,20 @@ function Home() {
 
     return (
       <section className='home' id='home'>
-          <Row className='row'>
+          <div className='row'>
 
-            <Col className='home-description'>
+            <div className='home-description'>
               <span className='tagline'>Welcome to my Portfolio</span>
               <h1>{`Hi I'm Mohammed Oubia`}<span className='warp'> {text}</span></h1>
               <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever sincethe 1500s, when an unknown printer took a galley</p>
               <button onClick={()=>console.log('connect selected')} className='connectBtn'>Let's connect<span> </span>
               </button>
-            </Col>
-
-            <Col className='home-image'>
+            </div>
+            <div className='home-image'>
               <img src={headerImg} alt="Header Img"/>
-            </Col>
+            </div>
             
-          </Row>
+          </div>
       </section>
     );
   }

@@ -71,7 +71,7 @@ ul{
 .ubi{
     font-family: 'Qwitcher Grypen';
     font-size:40px;
-    transition-duration: 3s;
+    transition-duration: 2s;
 }
 
 
@@ -79,7 +79,7 @@ ul{
 .Ou{
     font-family: 'Qwitcher Grypen', cursive;
     font-size:50px;
-    transition-duration: 3s;
+    transition-duration:2s;
 }
 
 
@@ -92,7 +92,7 @@ ul{
     border-left: 5px solid var(--skin-color);
     bottom:0;
     left:0;
-    transition-duration: 3s;
+    transition-duration: 2s;
 }
 .Asidedev .logo a::after{
     content:'';
@@ -103,7 +103,7 @@ ul{
     border-right: 5px solid var(--skin-color);
     top:0;
     right:0;
-    transition-duration: 3s;
+    transition-duration: 2s;
 }
 
 .Asidedev .logo a:hover::after{
@@ -115,7 +115,7 @@ ul{
     border-right: 5px solid var(--skin-color);
     top:0;
     right:0;
-    transition-duration: 3s;
+    transition-duration: 2s;
 
 }
 
@@ -128,7 +128,7 @@ ul{
     border-left: 5px solid var(--skin-color);
     bottom:0;
     left:0;
-    transition-duration: 3s;
+    transition-duration: 2s;
 }
 
 .Asidedev .logo a:hover .ubi{
@@ -140,50 +140,60 @@ ul{
 .Asidedev .nav li a {
     color: var(--text-black-900);
     display: block;
-    border-radius: 50%;
-    height: 50px;
-    width: 50px;
-    background-color:#f2f2fc7e;
-    border: solid var(#f2f2fc7e);
-    margin-bottom: 15px;  
+    margin-top: 15px;  
 }
 
 
-.Asidedev .nav li a:hover{
-    background-color: #6515f0;
-    transition-duration: 1s ;
-    display: inline-block;
-    border-radius: 50%;
-    transition-duration: all 1s ease-out;
+.wrapper .button{
+	display:inline-block;
+    height:50px;
+    width:50px;
+    margin:0 5px;
+    overflow:hidden;
+    background:#59595ad8;
+    border-radius:50px;
+    cursor:pointer;
+    box-shadow:0px 10px 10px rgba(253, 253, 253, 0.007);
+    transition: all 0.3s ease-out;
+}
+.wrapper .button .icon{
+    display:inline-block;
+    height:50px;
+    width:50px;
+    text-align: center;
+    border-radius: 50px;
+    box-sizing: border-box;
+    line-height:55px;
+    transition: all 0.3s ease-out;
 
 }
-
-.Asidedev .nav li a.active {
-    transition-duration: 1s;
-    background-color: #6515f0;
-    
+.wrapper .button:nth-child(1):hover .icon{
+    background-color:var(--skin-color);
 }
 
-.Asidedev .nav li a .FontAwesomeIcon{   
-    height: 20px;
-    width: 20px;
-    margin: 15px;
-}
-/* 
-.Asidedev .nav li a:hover span{ 
-    background-color: #6515f0;
-    transition-duration: 1s ;
-    display: block;
-    visibility: visible; 
-    height: 30px;
-    width: 90px;
-    font-size: 10px;
-    padding: 5px;
-    border-radius: 15%;
+.wrapper .button .icon .FontAwesomeIcon{
     font-size: 20px;
-    align-items: center;
-} */
+    line-height:60px;
+    color:#ffffff;
+    transition: all 0.3s ease-out;
 
- .spanItem{  
-    visibility: hidden; 
+}
+.wrapper .button:hover .icon .FontAwesomeIcon{
+    color:#ffffff;
+}
+.wrapper .button:hover {
+    background-color:var(--skin-color);
+
+}
+.wrapper .button span{
+    font-size:20px;
+    font-weight:100;
+    line-height:50px;
+    margin-left:10px;
+    color: #ffffff;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.wrapper .button:hover{
+    width:180px;
 }

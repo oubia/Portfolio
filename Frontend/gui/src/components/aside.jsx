@@ -19,17 +19,59 @@ function Aside() {
             </span>
         </div>
             <ul className='nav'>
-              <li>
-                <a href='#' className='active'>
-                  <FontAwesomeIcon className='FontAwesomeIcon' icon={faHome} />
-                    <span className='spanItem'>Home</span>
+              <div class='wrapper'>
+                <li>
+                <a href="#">
+                    <div class='button'>
+                        <div class='icon'>
+                          <FontAwesomeIcon className='FontAwesomeIcon' icon={faHome} />
+                        </div>
+                            <span>Home</span>
+                    </div>
                 </a>
-              </li>
-              <li><a href='#' ><FontAwesomeIcon className='FontAwesomeIcon' icon={faUser} /><span className='spanItem'>About</span></a></li>
-              <li><a href='#' ><FontAwesomeIcon className='FontAwesomeIcon' icon={faList} /><span className='spanItem'>Services</span></a></li>
-              <li><a href='#' ><FontAwesomeIcon className='FontAwesomeIcon' icon={faBriefcase} /><span className='spanItem'>Portfolio</span></a></li>
-              <li><a href='#' ><FontAwesomeIcon className='FontAwesomeIcon' icon={faComments} /><span className='spanItem'>Contact</span></a></li>
-
+                </li>
+                  <li>
+                    <a href='#' >
+                    <div class='button'>
+                        <div class='icon'>
+                          <FontAwesomeIcon className='FontAwesomeIcon' icon={faUser} />
+                        </div>
+                          <span>About</span>
+                    </div>
+                    </a>
+                  </li>
+                <li>
+                  <a href='#' >
+                    <div class='button'>
+                          <div class='icon'>
+                            <FontAwesomeIcon className='FontAwesomeIcon' icon={faList} />                       
+                          </div>
+                          <span>Services</span>
+                    </div>
+                  </a>
+                </li>
+                
+                <li>
+                  <a href='#' >
+                    <div class='button'>
+                          <div class='icon'>
+                          <FontAwesomeIcon className='FontAwesomeIcon' icon={faBriefcase} />                      
+                          </div>
+                          <span>Portfolio</span>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href='#' >
+                    <div class='button'>
+                          <div class='icon'>
+                            <FontAwesomeIcon className='FontAwesomeIcon' icon={faComments} />
+                          </div>
+                          <span>Contact</span>
+                    </div>
+                  </a>
+                </li>
+              </div>
             </ul>
     </aside>
   );
