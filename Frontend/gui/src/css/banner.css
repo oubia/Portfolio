@@ -26,7 +26,7 @@ ul{
 }
 
 .section {
-    background:var(--bg-black-900);
+    background:var(--main-color);
     min-height:100vh;
     display:block;
     position: fixed;
@@ -60,7 +60,7 @@ ul{
 }
 
 .Asidedev .logo a {
-    color: var(--text-black-900);
+    color: var(--white-color);
     font-weight: 700;
     padding:15px 20px;
     font-size: 30px;
@@ -88,8 +88,8 @@ ul{
     position:absolute;
     width:100px;
     height:0px;
-    border-bottom: 5px solid var(--skin-color);
-    border-left: 5px solid var(--skin-color);
+    border-bottom: 5px solid var(--main-color);
+    border-left: 5px solid var(--main-color);
     bottom:0;
     left:0;
     transition-duration: 2s;
@@ -99,8 +99,8 @@ ul{
     position:absolute;
     width:100px;
     height:0px;
-    border-top: 5px solid var(--skin-color);
-    border-right: 5px solid var(--skin-color);
+    border-top: 5px solid var(--main-color);
+    border-right: 5px solid var(--main-color);
     top:0;
     right:0;
     transition-duration: 2s;
@@ -112,7 +112,7 @@ ul{
     position:absolute;
     width:0px;
     height:60px;
-    border-right: 5px solid var(--skin-color);
+    border-right: 5px solid var(--main-color);
     top:0;
     right:0;
     transition-duration: 2s;
@@ -124,8 +124,8 @@ ul{
     position:absolute;
     width:0px;
     height:60px;
-    border-bottom: 5px solid var(--skin-color);
-    border-left: 5px solid var(--skin-color);
+    border-bottom: 5px solid var(--main-color);
+    border-left: 5px solid var(--main-color);
     bottom:0;
     left:0;
     transition-duration: 2s;
@@ -138,7 +138,7 @@ ul{
 }
 
 .Asidedev .nav li a {
-    color: var(--text-black-900);
+    color: var(--main-color);
     display: block;
     margin-top: 15px;  
 }
@@ -150,7 +150,7 @@ ul{
     width:50px;
     margin:0 5px;
     overflow:hidden;
-    background:#59595ad8;
+    background:var(--bg-gray);
     border-radius:50px;
     cursor:pointer;
     box-shadow:0px 10px 10px rgba(253, 253, 253, 0.007);
@@ -168,21 +168,21 @@ ul{
 
 }
 .wrapper .button:nth-child(1):hover .icon{
-    background-color:var(--skin-color);
+    background-color:var(--main-color);
 }
 
 .wrapper .button .icon .FontAwesomeIcon{
     font-size: 20px;
     line-height:60px;
-    color:#ffffff;
+    color:var(--white-color);
     transition: all 0.3s ease-out;
 
 }
 .wrapper .button:hover .icon .FontAwesomeIcon{
-    color:#ffffff;
+    color:var(--white-color);
 }
 .wrapper .button:hover {
-    background-color:var(--skin-color);
+    background-color:var(--main-color);
 
 }
 .wrapper .button span{
@@ -190,7 +190,7 @@ ul{
     font-weight:100;
     line-height:50px;
     margin-left:10px;
-    color: #ffffff;
+    color: var(--white-color);
     font-family: 'Roboto Mono', monospace;
 }
 

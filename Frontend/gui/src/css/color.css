@@ -1,9 +1,9 @@
 :root {
-    --bg-black-900:#f2f2fc;
-    --bg-black-100:#363638;
-    --bg-black-50:#19181a;
-    --text-black-900:white;
-    --text-black-700:#504e70;
-    --skin-color:#6515f0;
+    --main-color:#6515f0;
+    --light-main:#905fe6fa;
+    --black:#000;
+    --bg-gray:#59595ad8;
+    --bg-light-gray:#ffffffd8;
+    --white-color:white;
     
 }

@@ -1,6 +1,154 @@
-/* body {
-    line-height:1.5;
-    font-size:16px;
-    background-image: url('../assets/AbstractPaper.svg');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,100&display=swap');
 
-} */
+@import url(color.css);
+
+.section-title{
+    padding-left:15px;
+    padding-right:15px;
+}
+.container{
+    max-width:1100px;
+    width:100%;
+    margin:auto;
+}
+.Aboutrow{
+    display:flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: 30px;
+    position: relative;
+
+}
+.section-about .container
+{
+    padding-top: 60px;
+    padding-bottom: 70px;
+}
+.section-title{
+    flex:0 0 100%;
+    max-width: 100%;
+    margin-bottom: 50px;
+}
+.section-title h2{
+    font-size: 30px;
+    color:var(--white-color);
+    font-weight:700;
+    position: relative;
+    font-family: 'Roboto Mono', monospace;
+}
+.section-title h2::before{
+    content: '';
+    height: 4px;
+    width: 90px;
+    background-color: var(--main-color);
+    position: absolute;
+    top:100%;
+    left:2.5%;
+}
+.section-title h2::after{
+    content: '';
+    height: 4px;
+    width: 50px;
+    background-color: var(--main-color);
+    position: absolute;
+    margin-top:8px;
+    top:100%;
+    left:4.5%;
+}
+.about-content{
+    flex:0 0 100%;
+    max-width: 100%;
+    
+}
+.about-content .about-text{
+    flex:0 0 100%;
+    max-width: 100%;
+    padding-left:15px;
+    padding-right:15px;
+}
+.about-content .about-text h3{
+    font-size:20px;
+    margin-bottom: 15px;
+    font-family: 'Roboto Mono', monospace;
+    color:var(--white-color);
+    font-weight:700;
+}
+.about-content .about-text h3 span{
+    color:var(--light-main);
+}
+
+.about-content .about-text p{
+    font-size: 16px;
+    line-height:25px;
+    color:var(--white-color);
+}
+
+.about-content .personal-info {
+    flex:0 0 60%;
+    max-width: 60%;
+    margin-top: 40px;
+    padding-left:15px;
+    padding-right:15px;
+}
+
+.about-content .personal-info .info-item{
+    flex:0 0 50%;
+    max-width: 50%;
+    padding-left:15px;
+    padding-right:15px;
+}
+
+.about-content .personal-info .info-item p{
+    font-weight: 16px;
+    color: var(--white-color);
+    padding: 10px 0;
+    font-size:16px;
+    border-bottom: 1px solid var(--light-main);
+}
+
+.about-content .personal-info .info-item p span{
+    font-weight: 400;
+    color:var(--bg-light-gray);
+    margin-left: 4px;
+    display:inline-block;
+}
+
+.about-content .skills {
+    flex:0 0 40%;
+    max-width: 40%;
+    margin-top: 40px;
+    padding-left:15px;
+    padding-right:15px;
+}
+.buttons{
+    padding-top: 10px;
+    padding-left:15px;
+}
+.downloadBtn{
+    display: flex;
+    line-height:40px;
+    padding: 5px;
+    border-radius: 50px;
+    border: 1px solid var(--main-color);
+    color: white;
+}
+
+.buttons .downloadBtn span{
+    margin-left: 10px;
+}
+
+.buttons .downloadBtn:hover{
+    background-color:var(--main-color);
+    transition: all 0.3s;
+    z-index: -1;
+}
+
+.FontAwesomeIconDownload{
+    border-radius: 50%;
+    border: 1px ;
+    padding: 10px;
+    margin-left: 15px;
+    background: var(--main-color);
+    color: var(--white-color);
+}

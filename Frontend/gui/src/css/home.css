@@ -17,7 +17,6 @@ body {
 }
 .home-image{
     margin:10px;
-    
 
 }
 .home-image img {
@@ -26,25 +25,25 @@ body {
 }
 
 #main section .row .home-description .tagline{
-    color:white;
+    color:var(--white-color);
     font-size: 25px;
     font-family: 'Roboto Mono', monospace;
 }
 #main section .row .home-description .warp{
-    color:#905fe6fa;
-    font-size: 20px;
+    color:var(--light-main);
+    font-size: 25px;
     font-family: 'Roboto Mono', monospace;
 }
 
 #main section .row .home-description h1{
     margin-top: 15px;
     margin-bottom: 20px;
-    color:#905fe6fa;
-    font-size: 20px;
+    color:var(--white-color);
+    font-size: 25px;
     font-family: 'Roboto Mono', monospace;
 }
 #main section .row .home-description p{
-    color:white;
+    color:var(--white-color);
     margin-bottom: 15%;
     font-family: 'Roboto Mono', monospace;
     text-align: justify;
@@ -54,22 +53,22 @@ body {
     position: relative;
     display: inline-block;
     padding: 15px 20px;
-    color: #905fe6fa;
+    color: var(--light-main);
     text-decoration: none;
     text-transform: uppercase;
     transition: 0.5s;
     letter-spacing: 4px;
     overflow: hidden;
     margin-right: 50px;
-    background-color:black;
+    background-color:var(--black);
     border-radius: 50px;
  
    
 }
 .connectBtn:hover{
-    background: #905fe6fa;
-    color: #050801;
-    box-shadow: 0 0 5px #905fe6fa;
+    background: var(--light-main);;
+    color: var(--black);
+    box-shadow: 0 0 5px var(--light-main);;
 }
 
 .connectBtn span{
