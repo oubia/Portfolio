@@ -65,11 +65,44 @@ function About() {
                   <div className='skills'>
                     <div className='Aboutrow'>
                       <div className='skill-item'>
-                        <h5>CSS</h5>
-                        <div className='progreess'>
-                          <div className='progress-in'></div>
-                          <div className='skill-percent'>76%</div>
+                        <h4>Arabic</h4>
+                        <div class="circle-wrap">
+                          <div class="circle">
+                            <div class="mask full">
+                              <div class="fill"></div>
+                            </div>
+                            <div class="mask half">
+                              <div class="fill"></div>
+                            </div>
+                            <div class="inside-circle">
+                              70%
+                            </div>
+                          </div>
                         </div>
+                      </div>
+                      <div className='skill-item'>
+                        <h4>English</h4>
+                        <div class="circle-wrap">
+                          <div class="circle">
+                            <div class="mask full">
+                              <div class="fill"></div>
+                            </div>
+                            <div class="mask half">
+                              <div class="fill"></div>
+                            </div>
+                            <div class="inside-circle">
+                              90%
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div className='skill-item'>
+                        <h4>French</h4>
+                        
+                      </div>
+                      <div className='skill-item'>
+                        <h4>Espangol</h4>
+
                       </div>
                     </div>
                   </div>

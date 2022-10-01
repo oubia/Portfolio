@@ -152,3 +152,71 @@
     background: var(--main-color);
     color: var(--white-color);
 }
+.skills .skill-item{
+    height: 100px;
+    width:150px;
+    border:0.5px solid var(--main-color);
+    border-radius: 5px;
+    margin: 10px;
+    display:inline-block;
+    text-align: center;
+    box-shadow: 0px 10px 15px rgba(255, 255, 255, 0.116);
+    
+}
+.skills .skill-item h4{
+    padding:10px;
+    color:var(--white-color);
+}
+
+.circle-wrap {
+    margin-left:50px ;
+    width: 50px;
+    height: 50px;
+    background: #e6e2e7;
+    border-radius: 50%;
+  }
+
+.circle-wrap .circle .mask,.circle-wrap .circle .fill {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.circle-wrap .circle .mask {
+    clip: rect(0px, 60px, 60px, 15px);
+}
+
+.circle-wrap .circle .mask .fill {
+    clip: rect(0px, 20px, 60px, 0px);
+    background-color: var(--main-color);
+  }
+.circle-wrap .circle .mask.full,
+.circle-wrap .circle .fill {
+    animation: fill ease-in-out 3s;
+    transform: rotate(126deg);
+}
+
+@keyframes fill {
+0% {
+    transform: rotate(0deg);
+}
+100% {
+    transform: rotate(126deg);
+}
+}
+
+.circle-wrap .inside-circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #fff;
+    line-height: 40px;
+    text-align: center;
+    margin-top: 5px;
+    margin-left: 5px;
+    position: absolute;
+    z-index: 100;
+    font-weight: 700;
+    font-size: 15px;
+}
