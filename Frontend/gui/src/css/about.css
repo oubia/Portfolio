@@ -82,6 +82,7 @@
     font-size: 16px;
     line-height:25px;
     color:var(--white-color);
+    font-family: 'Roboto Mono', monospace;
 }
 
 .about-content .personal-info {
@@ -100,11 +101,12 @@
 }
 
 .about-content .personal-info .info-item p{
-    font-weight: 16px;
+    font-weight: 10px;
     color: var(--white-color);
     padding: 10px 0;
-    font-size:16px;
+    font-size:14px;
     border-bottom: 1px solid var(--light-main);
+    font-family: 'Roboto Mono', monospace;
 }
 
 .about-content .personal-info .info-item p span{
@@ -112,6 +114,7 @@
     color:var(--bg-light-gray);
     margin-left: 4px;
     display:inline-block;
+    font-family: 'Roboto Mono', monospace;
 }
 
 .about-content .skills {
@@ -166,6 +169,7 @@
 .skills .skill-item h4{
     padding:10px;
     color:var(--white-color);
+    font-family: 'Roboto Mono', monospace;
 }
 
 .circle-wrap {
@@ -219,4 +223,5 @@
     z-index: 100;
     font-weight: 700;
     font-size: 15px;
+    font-family: 'Roboto Mono', monospace;
 }
