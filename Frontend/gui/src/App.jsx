@@ -9,7 +9,7 @@ function App() {
       <Aside/>
      <main className="flex-item-1 center-content" id='main'>
     
-      <Home/>
+      {/* <Home/> */}
       <About/>
 
      </main>
