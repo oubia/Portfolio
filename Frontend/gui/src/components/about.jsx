@@ -3,12 +3,21 @@ import {Container, Row,Col} from 'react-bootstrap'
 import '../css/about.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faDownload } from '@fortawesome/free-solid-svg-icons'
+import { faPython } from '@fortawesome/free-solid-svg-icons'
+
 import { CircularProgressbar,buildStyles  } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
 
 
 
 function About() {
+
+  const [value, setValue] = React.useState(0);
+
+    React.useEffect(() => {
+      setValue(100);
+    });
+  
   
     return (
       <section className='section-about' id='about'>
@@ -72,10 +81,10 @@ function About() {
                         <h4>Arabic</h4>
                         <div className="progressdiv">
                           <CircularProgressbar value={100} text={`${100}%`}styles={buildStyles({
-                            pathColor: `rgb(101, 21, 240, ${100 / 100})`,
+                            pathColor: `rgb(92, 11, 8, ${100 / 100})`,
                             textColor: '#ffffff',
-                            trailColor: '#ffffffd8',
-                            backgroundColor: '#59595ad8',
+                            trailColor: '#d5df94dc',
+                            backgroundColor: '#AFBF48',
                           })}/>;
                         </div>
                       </div>
@@ -83,10 +92,10 @@ function About() {
                         <h4>English</h4>
                         <div className="progressdiv">
                           <CircularProgressbar value={80} text={`${80}%`} styles={buildStyles({
-                            pathColor: `rgb(101, 21, 240, ${100 / 100})`,
+                            pathColor: `rgb(92, 11, 8, ${100 / 100})`,
                             textColor: '#ffffff',
-                            trailColor: '#ffffffd8',
-                            backgroundColor: '#59595ad8',
+                            trailColor: '#d5df94dc',
+                            backgroundColor: '#AFBF48',
                           })}/>;
                         </div>
                       </div>
@@ -94,10 +103,10 @@ function About() {
                         <h4>French</h4>
                         <div className="progressdiv">
                           <CircularProgressbar value={70} text={`${70}%`} styles={buildStyles({
-                            pathColor: `rgb(101, 21, 240, ${100 / 100})`,
+                            pathColor: `rgb(92, 11, 8, ${100 / 100})`,
                             textColor: '#ffffff',
-                            trailColor: '#ffffffd8',
-                            backgroundColor: '#59595ad8',
+                            trailColor: '#d5df94dc',
+                            backgroundColor: '#AFBF48',
                           })}/>;
                         </div>
                       </div>
@@ -105,10 +114,10 @@ function About() {
                         <h4>Espangol</h4>
                         <div className="progressdiv">
                           <CircularProgressbar value={10} text={`${10}%`} styles={buildStyles({
-                            pathColor: `rgb(101, 21, 240, ${100 / 100})`,
+                            pathColor: `rgb(92, 11, 8, ${100 / 100})`,
                             textColor: '#ffffff',
-                            trailColor: '#ffffffd8',
-                            backgroundColor: '#59595ad8',
+                            trailColor: '#d5df94dc',
+                            backgroundColor: '#AFBF48',
                           })}/>;
                         </div>
                       </div>
@@ -124,81 +133,85 @@ function About() {
                 <h3>SKILLS</h3>
                 <div className="skills">
                     <div className="progressdiv1">
-                          <CircularProgressbar value={100} text={`${100}%`} styles={buildStyles({
-                            pathColor: `rgb(101, 21, 240, ${100 / 100})`,
-                            textColor: '#ffffff',
-                            trailColor: '#ffffffd8',
-                            backgroundColor: '#59595ad8',
-                          })}/>;
-                      <h4>Java</h4>
+                      <h4>PYTHON</h4>
+                        <div className="progress-div" style={{width: `${200}px`}}>
+                          <div style={{width: `${value}px`}} className="progress">
+                          </div>
+                        </div>
                     </div>
-                        <div className="progressdiv1">
-                          <CircularProgressbar value={100} text={`${100}%`}styles={buildStyles({
-                            pathColor: `rgb(101, 21, 240, ${100 / 100})`,
-                            textColor: '#ffffff',
-                            trailColor: '#ffffffd8',
-                            backgroundColor: '#59595ad8',
-                          })}/>;
-                        <h4>Java</h4>
+
+                    <div className="progressdiv1">
+                      <h4>JAVA</h4>
+                        <div className="progress-div" style={{width: `${200}px`}}>
+                          <div style={{width: `${180}px`}} className="progress">
+                          </div>
                         </div>
-                        <div className="progressdiv1">
-                          <CircularProgressbar value={100} text={`${100}%`}styles={buildStyles({
-                            pathColor: `rgb(101, 21, 240, ${100 / 100})`,
-                            textColor: '#ffffff',
-                            trailColor: '#ffffffd8',
-                            backgroundColor: '#59595ad8',
-                          })}/>;
-                                                <h4>Java</h4>
+                    </div>
 
+                    <div className="progressdiv1">
+                      <h4>JAVASCRIPT</h4>
+                        <div className="progress-div" style={{width: `${200}px`}}>
+                          <div style={{width: `${180}px`}} className="progress">
+                          </div>
                         </div>
-                        <div className="progressdiv1">
-                          <CircularProgressbar value={100} text={`${100}%`}styles={buildStyles({
-                            pathColor: `rgb(101, 21, 240, ${100 / 100})`,
-                            textColor: '#ffffff',
-                            trailColor: '#ffffffd8',
-                            backgroundColor: '#59595ad8',
-                          })}/>;
-                                                <h4>Java</h4>
+                    </div>
 
-                        </div><div className="progressdiv1">
-                          <CircularProgressbar value={100} text={`${100}%`}styles={buildStyles({
-                            pathColor: `rgb(101, 21, 240, ${100 / 100})`,
-                            textColor: '#ffffff',
-                            trailColor: '#ffffffd8',
-                            backgroundColor: '#59595ad8',
-                          })}/>;
-                          <h4>Java</h4>
-
-                        </div><div className="progressdiv1">
-                          <CircularProgressbar value={100} text={`${100}%`}styles={buildStyles({
-                            pathColor: `rgb(101, 21, 240, ${100 / 100})`,
-                            textColor: '#ffffff',
-                            trailColor: '#ffffffd8',
-                            backgroundColor: '#59595ad8',
-                          })}/>;
-                          <h4>Java</h4>
-
-                        </div><div className="progressdiv1">
-                          <CircularProgressbar value={100} text={`${100}%`}styles={buildStyles({
-                            pathColor: `rgb(101, 21, 240, ${100 / 100})`,
-                            textColor: '#ffffff',
-                            trailColor: '#ffffffd8',
-                            backgroundColor: '#59595ad8',
-                          })}/>;
-                          <h4>Java</h4>
-
+                    <div className="progressdiv1">
+                      <h4>DART</h4>
+                        <div className="progress-div" style={{width: `${200}px`}}>
+                          <div style={{width: `${180}px`}} className="progress">
+                          </div>
                         </div>
+                    </div>
+
+
+                    <div className="progressdiv1">
+                      <h4>DJANGO</h4>
+                        <div className="progress-div" style={{width: `${200}px`}}>
+                          <div style={{width: `${180}px`}} className="progress">
+                          </div>
+                        </div>
+                    </div>
+
+                    <div className="progressdiv1">
+                      <h4>FLLUTER</h4>
+                        <div className="progress-div" style={{width: `${200}px`}}>
+                          <div style={{width: `${180}px`}} className="progress">
+                          </div>
+                        </div>
+                    </div>
+
+
+                    <div className="progressdiv1">
+                      <h4>REACT</h4>
+                        <div className="progress-div" style={{width: `${200}px`}}>
+                          <div style={{width: `${180}px`}} className="progress">
+                          </div>
+                        </div>
+                    </div>
+
+
+                    <div className="progressdiv1">
+                      <h4>MONGO</h4>
+                        <div className="progress-div" style={{width: `${200}px`}}>
+                          <div style={{width: `${180}px`}} className="progress">
+                          </div>
+                        </div>
+                    </div>
+
                 </div>
+
               </div>
               <div class="about-content">
               <div className="Aboutrow">
                     <div className='devider'></div>
-                </div>
               </div>
+            </div>
               
 
-            </div>
           </div>
+        </div>
+
       </section>
     );
   }

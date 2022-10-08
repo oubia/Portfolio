@@ -135,16 +135,28 @@
     border-radius: 50px;
     border: 1px solid var(--main-color);
     color: white;
+    transition: all 0.3s;
+    
+    
+
 }
+
 
 .buttons .downloadBtn span{
     margin-left: 10px;
 }
 
 .buttons .downloadBtn:hover{
-    background-color:var(--main-color);
+    background-color:var(--light-main);
     transition: all 0.3s;
     z-index: -1;
+    color: var(--black);
+}
+.buttons .downloadBtn:hover .FontAwesomeIconDownload{
+    background: var(--light-main);
+    color: var(--black);
+    transition: all 0.3s;
+
 }
 
 .FontAwesomeIconDownload{
@@ -153,13 +165,15 @@
     padding: 10px;
     margin-left: 15px;
     background: var(--main-color);
-    color: var(--white-color);
+    color: var(--bg-light-gray);
+    transition: all 0.3s;
+
 }
 .skills .skill-item{
     position: relative;
     height: 100px;
     width:150px;
-    border:0.5px solid var(--main-color);
+    border:0.5px solid var(--light-main);
     border-radius: 5px;
     margin: 10px;
     display:block;
@@ -180,12 +194,12 @@
 }   
 
 .devider{
-    margin-top: 20px;
+    margin-top: 60px;
     background-color:var(--light-main);
     width:300px;
     height: 4px;
     margin-left: 30%;
-    border: 1 solid var(--light-main);
+    border: 1px solid var(--light-main);
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.692);
 }
@@ -195,13 +209,6 @@
     flex-wrap: wrap;
     max-width: 100%;
     text-align: center;
-}
-
-.progressdiv1{
-    margin: 20px;
-    width: 120px;
-    height: 120px;
-    padding: 10px;
 }
 
 .skill-details h3{
@@ -219,4 +226,30 @@
     font-size:15px;
     margin-top: 0px;
 
+}
+
+.progressdiv1{
+    margin: 20px;
+    width: 200px;
+    height: 10px;
+    padding: 10px;
+}
+
+
+
+
+
+.progress-div {
+    background-color: #d5df94dc;
+    border-radius: 60px;
+    height: 10px;
+
+}
+
+.progress {
+    background-color: var(--main-color);
+    height: 10px;
+    border-radius: 60px;
+    transition: 1s ease;
+    transition-delay: 0.5s;
 }

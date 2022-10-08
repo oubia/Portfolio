@@ -1,9 +1,8 @@
 :root {
-    --main-color:rgb(101, 21, 240);
-    --light-main:rgb(145, 96, 230);
+    --main-color:hwb(2 3% 64%);
+    --light-main:#AFBF48;
     --black:#000;
-    --bg-gray:#59595ad8;
+    --bg-gray:#59595a83;
     --bg-light-gray:#ffffffd8;
     --white-color:#ffffff;
-    
 }
