@@ -253,3 +253,30 @@
     transition: 1s ease;
     transition-delay: 0.5s;
 }
+
+
+
+.about-content .Aboutrow .education{
+    flex:0 0 50%;
+    max-width: 50%;
+    margin-top: 40px;
+    padding-left:15px;
+    padding-right:15px;
+}
+
+.about-content .Aboutrow .experience{
+    flex:0 0 50%;
+    max-width: 50%;
+    margin-top: 40px;
+    padding-left:15px;
+    padding-right:15px;
+
+}
+.about-content .Aboutrow .education, 
+.about-content .Aboutrow .experience h3{
+    font-size:20px;
+    margin-bottom: 15px;
+    font-family: 'Roboto Mono', monospace;
+    color:var(--white-color);
+    font-weight:700;
+}

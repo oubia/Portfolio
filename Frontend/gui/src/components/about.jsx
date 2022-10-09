@@ -123,12 +123,13 @@ function About() {
                       </div>
                     </div>
                   </div>
-                  
                 </div>
+
                 <div className="Aboutrow">
-                    <div className='devider'></div>
+                    <div className='devider'/>
                 </div>
               </div>
+
               <div className='skill-details'>
                 <h3>SKILLS</h3>
                 <div className="skills">
@@ -198,15 +199,28 @@ function About() {
                           </div>
                         </div>
                     </div>
+                </div>
+              </div>
 
+              <div class="about-content">
+                <div className="Aboutrow">
+                      <div className='devider'/>
+                </div>
+              </div>
+
+                <div class="about-content">
+                  <div className="Aboutrow">
+                    <div className='education'>
+                      <h3 className='title'>Education</h3>
+                    </div>
+
+                    <div className='experience'>
+                      <h3 className='title'>Experience</h3>
+                    </div>
+                  </div>
                 </div>
 
-              </div>
-              <div class="about-content">
-              <div className="Aboutrow">
-                    <div className='devider'></div>
-              </div>
-            </div>
+              
               
 
           </div>
