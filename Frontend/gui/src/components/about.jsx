@@ -3,7 +3,7 @@ import {Container, Row,Col} from 'react-bootstrap'
 import '../css/about.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faDownload } from '@fortawesome/free-solid-svg-icons'
-import { faPython } from '@fortawesome/free-solid-svg-icons'
+import { faCalendar } from '@fortawesome/free-solid-svg-icons'
 
 import { CircularProgressbar,buildStyles  } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
@@ -212,11 +212,84 @@ function About() {
                   <div className="Aboutrow">
                     <div className='education'>
                       <h3 className='title'>Education</h3>
-                    </div>
+                      <div className="Aboutrow">
+                        <div className='timeline-div'>
+                          <div className='timeline shadow-box'>
+                            <div className='timeline-item'>
+                              <div className='circle-dot'></div>
+                              <h3 className='timeline-date'>
+                                <FontAwesomeIcon className='calendar' icon={faCalendar} />2022 - 2022                         
+                              </h3>
+                              <h4 className='timeline-title'>Bachlordegree</h4>
+                              <p className='timeline-text'>
+                              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+                              labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                              cillum dolore eu fugiat nulla pariatur. 
+                              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                              </p>
+                            </div>
 
+                            <div className='timeline-item'>
+                              <div className='circle-dot'></div>
+                              <h3 className='timeline-date'>
+                                <FontAwesomeIcon className='calendar' icon={faCalendar} />2022 - 2022                    
+                              </h3>
+                              <h4 className='timeline-title'>Bachlordegree</h4>
+                              <p className='timeline-text'>
+                              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+                              labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                              cillum dolore eu fugiat nulla pariatur. 
+                              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                              </p>
+                            </div>
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    
                     <div className='experience'>
                       <h3 className='title'>Experience</h3>
+                      <div className="Aboutrow">
+                        <div className='timeline-div'>
+                          <div className='timeline shadow-box'>
+                            <div className='timeline-item'>
+                              <div className='circle-dot'></div>
+                              <h3 className='timeline-date'>
+                                <FontAwesomeIcon className='calendar' icon={faCalendar} />2022 - 2022                         
+                              </h3>
+                              <h4 className='timeline-title'>Bachlordegree</h4>
+                              <p className='timeline-text'>
+                              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+                              labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                              cillum dolore eu fugiat nulla pariatur. 
+                              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                              </p>
+                            </div>
+
+                            <div className='timeline-item'>
+                              <div className='circle-dot'></div>
+                              <h3 className='timeline-date'>
+                                <FontAwesomeIcon className='calendar' icon={faCalendar} />2022 - 2022                         
+                              </h3>
+                              <h4 className='timeline-title'>Bachlordegree</h4>
+                              <p className='timeline-text'>
+                              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+                              labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                              cillum dolore eu fugiat nulla pariatur. 
+                              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                              </p>
+                            </div>
+
+                          </div>
+                        </div>
+                      </div>
                     </div>
+                    
                   </div>
                 </div>
 

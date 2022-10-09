@@ -178,7 +178,7 @@
     margin: 10px;
     display:block;
     text-align: center  ;
-    box-shadow: 0px 10px 15px rgba(255, 255, 255, 0.116);
+    box-shadow: 0px 0px 10px rgba(175, 191, 72 ,0.116);
     
 }
 .skills .skill-item h4{
@@ -272,11 +272,103 @@
     padding-right:15px;
 
 }
-.about-content .Aboutrow .education, 
+.about-content .Aboutrow .education h3, 
 .about-content .Aboutrow .experience h3{
     font-size:20px;
     margin-bottom: 15px;
     font-family: 'Roboto Mono', monospace;
     color:var(--white-color);
     font-weight:700;
+}
+
+.about-content .Aboutrow .education .timeline-div,
+.about-content .Aboutrow .experience .timeline-div{
+    flex:0 0 100%;
+    max-width: 100%;
+    margin-top: 40px;
+    padding-left:15px;
+    padding-right:15px;
+    
+}
+
+.about-content .Aboutrow .education .timeline,
+.about-content .Aboutrow .experience .timeline{
+    background-color:var(--bg-gray);
+    padding:30px 15px;
+    border:1px solid var(--bg-gray);
+    border-radius:10px;
+    width: 100%;
+    position: relative;
+
+}
+
+.about-content .Aboutrow .education .timeline .timeline-item,
+.about-content .Aboutrow .experience .timeline .timeline-item{
+    position: relative;
+    padding-left: 37px;
+    padding-bottom: 50px;
+}
+
+.about-content .Aboutrow .education .timeline .timeline-item:last-child,
+.about-content .Aboutrow .experience .timeline .timeline-item:last-child{
+    padding-bottom: 0px;
+}
+
+.about-content .Aboutrow .education .timeline .timeline-item::before,
+.about-content .Aboutrow .experience .timeline .timeline-item::before{
+    content: '';
+    width:1px;
+    position: absolute;
+    height:100%;
+    left:7px;
+    top:0;
+    background-color:var(--light-main);
+}
+
+.about-content .Aboutrow .education .timeline .circle-dot,
+.about-content .Aboutrow .experience .timeline .circle-dot {
+    position: absolute;
+    left: 0;
+    top:0;
+    height:15px;
+    width:15px;
+    border-radius:50%;
+    background-color:var(--light-main);
+}
+
+.about-content .Aboutrow .education .timeline .timeline-date,
+.about-content .Aboutrow .experience .timeline .timeline-date{
+    font-weight: 400;
+    font-size: 14px;
+    margin-bottom: 12px;
+    color:var(--light-main);
+}
+
+.about-content .Aboutrow .education .timeline .timeline-date .calendar,
+.about-content .Aboutrow .experience .timeline .timeline-date .calendar{
+    margin-right: 5px;
+}
+
+.about-content .Aboutrow .education .timeline .timeline-title,
+.about-content .Aboutrow .experience .timeline .timeline-title{
+    font-weight:700;
+    font-size: 18px;
+    margin-bottom: 15px;
+    text-transform:capitalize;
+    color: var(--white-color);
+    font-family: 'Roboto Mono', monospace;
+
+}
+.about-content .Aboutrow .education .timeline .timeline-text,
+.about-content .Aboutrow .experience .timeline .timeline-text{
+    line-height: 25px;
+    font-size: 14px;
+    text-align:justify;
+    color: var(--white-color);
+    font-family: 'Roboto Mono', monospace;
+
+
+}
+.shadow-box{
+    box-shadow: 0px 0px 10px rgba(175, 191, 72 ,0.116);
 }
