@@ -44,6 +44,7 @@ function Home() {
 
     return (
       <section className='home' id='home'>
+       
           <div className='row'>
 
             <div className='home-description'>
@@ -56,7 +57,6 @@ function Home() {
             <div className='home-image'>
               <img src={headerImg} alt="Header Img"/>
             </div>
-            
           </div>
       </section>
     );

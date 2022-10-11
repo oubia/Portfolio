@@ -21,6 +21,7 @@ function About() {
   
     return (
       <section className='section-about' id='about'>
+         
           <div className='container'>
             <div className='row'>
                 <div className='section-title'>
