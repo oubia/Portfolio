@@ -4,6 +4,7 @@ import "E:/homy/Portfolio/Portfolio/Frontend/gui/node_modules/gestalt/dist/gesta
 import All from './porfolio_material/all'
 import About from '../components/about'
 import Services from '../components/services'
+import '../css/portfolio.css';
 
 function Portfolio() { 
 
@@ -16,7 +17,7 @@ function Portfolio() {
     <Icon
         icon="pin"
         accessibilityLabel="Pin"
-        color="default"
+        color="red"
     />,
     ];
 
@@ -34,14 +35,16 @@ function Portfolio() {
                     <h2>Portfolio</h2>
                 </div>
             </div>
-                <Flex direction="column" gap={{ column: 2, row: 0 }}>
+                <Flex direction="column" gap={{ column: 2, row: 0 }} 
+                >
                     <SegmentedControl
                         items={items}
                         selectedItemIndex={itemIndex}
                         onChange={({ activeIndex }) => setItemIndex(activeIndex)}
+                        
                     />
-                    <Box borderStyle="shadow" padding={6} rounding={2}>
-                        <Text>{content[itemIndex]}</Text>
+                    <Box borderStyle="shadow" padding={6} rounding={2} >
+                        <Text >{content[itemIndex]}</Text>
                     </Box>
                 </Flex>
         </div>

@@ -1,16 +1,13 @@
 import React from 'react';
-
+import 'E:/homy/Portfolio/Portfolio/Frontend/gui/src/css/portfolio.css';
+import siteImg from "E:/homy/Portfolio/Portfolio/Frontend/gui/src/assets/images/header.png"
 
 function All() { 
 
       return (
-        <div className='service-item'>
-            <div className='service-item-inner'>
-                <div className='icon'>
-                </div>
-                <h4>Web Design</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-                    </p>
+        <div className='portfolio-item'>
+            <div className='portfolio-item-inner'>
+                <img src={siteImg}/>
             </div>
         </div>
       );

@@ -1,0 +1,90 @@
+.contact-title{
+    color:var(--light-main);
+    text-align:center;
+    font-size:25px;
+    margin-bottom:10px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.contact-sub-title{
+    color:var(--white-color);
+    text-align:center;
+    font-size:15px;
+    margin-bottom:30px;
+
+}
+
+.contact-info-item{
+    padding-left:15px;
+    padding-right:15px;
+    flex:0 0 25%;
+    max-width: 25%;
+    text-align:center
+}
+.contact-info-item .icon .fontawsome{
+    color:var(--light-main);
+    height:20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+.contact-info-item h4{
+    color:var(--light-main);
+    font-size:15px;
+    font-family: 'Roboto Mono', monospace;
+
+}
+.contact-info-item p{
+    font-family: 'Roboto Mono', monospace;
+    color: var(--bg-light-gray);
+    font-size:15px;
+
+}
+.contact-form{
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-top: 30px;
+
+}
+.contact-form .col-6{
+    flex: 0 0 49%;
+    max-width: 49%;
+}
+.contact-form .col-12{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.contact-form .from-item{
+    margin-bottom:30px;
+}
+.form-control{
+    width:100%;
+    height:50px;
+    border-radius:25px;
+    background-color:var(--bg-gray);
+    border:1px solid var(--main-color);
+    padding: 10px 25px;
+    font-size: 16px;
+    color: var(--light-main);
+    transition: all 0.5s ease;
+}
+
+.form-control:focus{
+    box-shadow: 0px 0px 10px rgba(175, 191, 72, 0.425);
+    border:1px solid var(--light-main);
+
+
+}
+.textArea{
+    height:150px;
+}
+.emailform{
+    margin-left: 20px;
+}
+
+.sendmessagebtn{
+    background: var(--light-main);
+    color: var(--main-color);
+    border: 1px solid var(--main-color);
+}

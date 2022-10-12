@@ -5,7 +5,7 @@ import About from './components/about'
 import Services from './components/services'
 import AnimatedCursor from "react-animated-cursor"
 import Portfolio from "./components/Portfolio"
-
+import Contact from './components/contact'
 
 function App() {
   return (
@@ -25,7 +25,8 @@ function App() {
       {/* <Home/> */}
       {/* <About/> */}
       {/* <Services/> */}
-      <Portfolio/>
+      {/* <Portfolio/> */}
+      <Contact/>
      </main>
 
     </div>

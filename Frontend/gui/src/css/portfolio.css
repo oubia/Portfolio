@@ -1,0 +1,29 @@
+.SegmentedControl{
+    background-color:red;
+    color:green;
+}
+
+
+.portfolio-item{
+    margin-bottom:30px;
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    padding-left:15px;
+    padding-right:15px;
+}
+
+.portfolio-item .portfolio-item-inner{
+    background-color: var(--bg-gray);
+    border:1 solid var(--black);
+    border-radius: 10px;
+    padding: 30px 15px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.portfolio-item .portfolio-item-inner:hover{
+    box-shadow: 0px 0px 30px rgba(175, 191, 72 ,0.116);
+
+}
+
+
