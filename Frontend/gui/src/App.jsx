@@ -6,9 +6,12 @@ import Services from './components/services'
 import AnimatedCursor from "react-animated-cursor"
 import Portfolio from "./components/Portfolio"
 import Contact from './components/contact'
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 function App() {
   return (
+    
+
     <div className="App">
       <AnimatedCursor
       innerSize={15}
@@ -19,14 +22,19 @@ function App() {
       innerScale={0.2}
       outerScale={3}
     />
-      <Aside/>
+      <Aside data={window.location.pathname}/>
      <main className="flex-item-1 center-content" id='main'>
-    
-      {/* <Home/> */}
-      {/* <About/> */}
-      {/* <Services/> */}
-      {/* <Portfolio/> */}
-      <Contact/>
+      <BrowserRouter>
+        <Routes>
+
+          <Route path="/" element={<Home />}/>
+          <Route path="/about" element={<About />}/>
+          <Route path="/services" element={<Services /> } />
+          <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/contact" element={<Contact />} />
+
+        </Routes>
+      </BrowserRouter>
      </main>
 
     </div>

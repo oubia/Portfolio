@@ -11,20 +11,17 @@ function Portfolio() {
     const [itemIndex, setItemIndex] = React.useState(0);
 
     const items = [
-    'News',
-    'You',
-    'Messages',
-    <Icon
-        icon="pin"
-        accessibilityLabel="Pin"
-        color="red"
-    />,
+    'Web Development',
+    'Mobiel Development',
+    'Machine learning',
+    'DataBase',
     ];
 
     const content = [
         <All/>,
-        <About/>,
-        <Services/>,
+        <All/>,
+        <All/>,
+        <All/>,   
     ];
 
     return (

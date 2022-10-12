@@ -7,7 +7,7 @@ function All() {
       return (
         <div className='portfolio-item'>
             <div className='portfolio-item-inner'>
-                <img src={siteImg}/>
+                {/* <img src={{''}}/> */}
             </div>
         </div>
       );
