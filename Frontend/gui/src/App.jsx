@@ -1,5 +1,6 @@
 import React from 'react';
 import Aside from './components/aside';
+import BottomBanner from './components/bottomBanner';
 import Home from './components/home'
 import About from './components/about'
 import Services from './components/services'
@@ -23,6 +24,8 @@ function App() {
       outerScale={3}
     />
       <Aside data={window.location.pathname}/>
+      <BottomBanner data={window.location.pathname}/>
+
      <main className="flex-item-1 center-content" id='main'>
       <BrowserRouter>
         <Routes>

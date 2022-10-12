@@ -12,7 +12,7 @@ function Aside(props) {
   return (
     <aside className="Asidedev">
         <div className='logo'>
-            <a href='#' ><span className="Ou">O</span><span className="ubi">ub<span className="Ou">i</span>a</span></a>
+            <a href='/' ><span className="Ou">O</span><span className="ubi">ub<span className="Ou">i</span>a</span></a>
         </div>
         <div className='nav-toggler'>
             <span>

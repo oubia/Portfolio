@@ -156,18 +156,7 @@ ul{
     box-shadow:0px 10px 10px rgba(253, 253, 253, 0.007);
     transition: all 0.3s ease-out;
 }
-.wrapper .checkedButton{
-    display:inline-block;
-    height:50px;
-    width:50px;
-    margin:0 5px;
-    overflow:hidden;
-    background:var(--main-color);
-    border-radius:50px;
-    cursor:pointer;
-    box-shadow:0px 10px 10px rgba(253, 253, 253, 0.007);
-    transition: all 0.3s ease-out;
-}
+
 
 .wrapper .button .icon{
     display:inline-block;
@@ -209,4 +198,70 @@ ul{
 
 .wrapper .button:hover{
     width:180px;
+}
+
+@media (min-width:1442px){
+    .AsidedevBottom{
+        visibility: hidden;
+        bottom:0;
+        width:270px;
+        position:fixed;
+        top:100%;
+        z-index:10;
+        height: 100%;
+        padding:30px;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+    }
+}
+
+@media (max-width:1442px){
+    .Asidedev{
+        visibility: hidden;
+        left: 100%;
+    }
+    .AsidedevBottom{
+        bottom:0px;
+        width:100%;
+        position:fixed;
+        overflow: hidden;
+        height: 7%;
+        display: block;
+        text-align: center;
+        background-color: var(--light-main);
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
+
+
+
+    }
+    
+    .Asidedev .nav li a {
+        color: var(--main-color);
+        display: block;
+    }
+
+    .wrapper{
+        padding-top: 0.5%;
+        display:flex;
+        justify-content:space-evenly;
+        align-items: center;
+        
+
+    }
+    .wrapper .button{
+        display:inline-block;
+        height:90%;
+        width:90%;
+        overflow:hidden;
+        background:var(--bg-gray);
+        border-radius:50px;
+        cursor:pointer;
+        box-shadow:0px 10px 10px rgba(253, 253, 253, 0.007);
+        transition: all 0.3s ease-out;
+    }
+    .wrapper .button:hover{
+        width:90%;
+    }
 }
