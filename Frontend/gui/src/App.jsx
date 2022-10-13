@@ -13,7 +13,7 @@ function App() {
   return (
     
 
-    <div className="App">
+    <div >
       <AnimatedCursor
       innerSize={15}
       outerSize={15}
@@ -23,10 +23,8 @@ function App() {
       innerScale={0.2}
       outerScale={3}
     />
-      <Aside data={window.location.pathname}/>
-      <BottomBanner data={window.location.pathname}/>
-
-     <main className="flex-item-1 center-content" id='main'>
+      
+     <main className="center-content" id='main'>
       <BrowserRouter>
         <Routes>
 
@@ -39,6 +37,8 @@ function App() {
         </Routes>
       </BrowserRouter>
      </main>
+     <Aside data={window.location.pathname}/>
+      <BottomBanner data={window.location.pathname}/>
 
     </div>
   );

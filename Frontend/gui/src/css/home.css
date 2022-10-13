@@ -3,8 +3,6 @@
 body {
     line-height:1.5;
     font-size:16px;
-    /* background-image: url('../assets/AbstractPaper5.svg'); */
-    /* background-color: rgb(5, 5, 5); */
     background-color: #120D0E;
 }
 #main{
@@ -130,3 +128,38 @@ body::-webkit-scrollbar-thumb:hover {
     border: 3px solid var(--bg-gray);  
 }
 
+@media (max-width:1300px){
+    #main{
+        margin-left:40px;
+
+        height: 10%;
+        padding-left: 10px;
+        
+    }
+}
+@media (max-width:800px){
+    #main section .row {
+        display:block;
+        position: relative;
+        max-width: 90%;
+    }
+    #main section .row .home-description{
+        flex:0 0 100%;
+        max-width: 100%;
+        padding-top: 15%;
+        padding-right: 8%;
+
+    }
+    .home-image img{
+        height:20%;
+        position: relative;
+        width: 60%;
+        margin:0px;
+        
+    }
+    .home-image{
+        width:90%;
+        margin:0px;
+
+    }
+}

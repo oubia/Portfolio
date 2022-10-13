@@ -51,7 +51,7 @@ function Home() {
               <span className='tagline'>Welcome to my Portfolio</span>
               <h1>{`Hi I'm Oubia`}<span className='warp'> {text}</span></h1>
               <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever sincethe 1500s, when an unknown printer took a galley</p>
-              <button onClick={()=>console.log('connect selected')} className='connectBtn'>Let's connect<span> </span>
+              <button onClick={()=>console.log('connect selected')} className='connectBtn' href='/contact'>Let's connect<span> </span>
               </button>
             </div>
             <div className='home-image'>
