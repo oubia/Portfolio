@@ -20,7 +20,7 @@
     position: relative;
 
 }
-.section-   about .container
+.section-about .container
 {
     padding-top: 60px;
     padding-bottom: 70px;
@@ -377,4 +377,198 @@
     .about-text{
         flex: 0 0 100%;
     }
+    .about-content .personal-info{
+        flex: 0 0 100%;
+        display: block;
+        max-width: 100%;
+    }
+    .first-session{
+        display: block;
+        margin: 0px ;
+    }
+  
+    
+    .section-about{
+        overflow: scroll;
+    }
+    
+    .about-content .skills {
+        flex: 0 0 90%;
+        max-width: 90%;
+        margin-top: 40px;
+        margin-left: 15px;
+        padding-right: 15px;
+    }
+    .skills .skill-item {
+        position: relative;
+        height: 25%;
+        width: 100%;
+        border: 0.5px solid var(--light-main);
+        border-radius: 5px;
+        margin: 10px;
+        display: block;
+        text-align: center;
+        box-shadow: 0px 0px 10px rgb(175 191 72 / 12%);
+    }
+    
+    .progressdiv {
+        width: 40%;
+        height: 40%;
+        margin-left: 30%;
+    }
+    .skills .skill-item h4{
+        font-size: 25px;
+    }
+    .devider {
+        margin-top: 10%;
+        width: 95%;
+        height: 4px;
+        margin-left: 0;
+    }
+    
+    .about-content .Aboutrow .education {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .about-content .Aboutrow .education h3{
+        font-size: 40px;
+    }
+    .about-content .Aboutrow .education .timeline-div, .about-content .Aboutrow .experience .timeline-div {
+        padding-left: 0px;
+    }
+    .about-content .Aboutrow .education .Aboutrow .timeline-div .timeline .timeline-item h4{
+        font-size: 30px;
+    }
+    .about-content .Aboutrow .education .Aboutrow .timeline-div .timeline .timeline-item p{
+        font-size: 25px;
+    }
+    .about-content .Aboutrow .education .Aboutrow .timeline-div .timeline .timeline-item .calendar{
+        font-size: 25px;
+    }
+    .about-content .Aboutrow .education .Aboutrow .timeline-div .timeline .timeline-item h3{
+        font-size: 25px;
+    }
+
+    .about-content .Aboutrow .experience {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .about-content .Aboutrow .experience h3{
+        font-size: 40px;
+    }
+    .about-content .Aboutrow .experience .Aboutrow .timeline-div .timeline .timeline-item h4{
+        font-size: 30px;
+    }
+    .about-content .Aboutrow .experience .Aboutrow .timeline-div .timeline .timeline-item p{
+        font-size: 25px;
+    }
+    .about-content .Aboutrow .experience .Aboutrow .timeline-div .timeline .timeline-item .calendar{
+        font-size: 25px;
+    }
+    .about-content .Aboutrow .experience .Aboutrow .timeline-div .timeline .timeline-item h3{
+        font-size: 25px;
+    }
+    
+}
+
+@media (max-width:550px){
+    .about-content .personal-info .first-session-aprt1{
+        display: block;
+
+    }
+    .about-content .personal-info .first-session-aprt1 .info-item{
+        margin: 0px;
+        flex:0 0 100%;
+        max-width: 100%;
+    }
+    .Aboutrow {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    
+    .section-about{
+        overflow: scroll;
+    }
+    .about-content .skills {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-top: 40px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .skills .skill-item {
+        position: relative;
+        height: 25%;
+        width: 100%;
+        border: 0.5px solid var(--light-main);
+        border-radius: 5px;
+        margin: 10px;
+        display: block;
+        text-align: center;
+        box-shadow: 0px 0px 10px rgb(175 191 72 / 12%);
+    }
+    .progressdiv {
+        width: 40%;
+        height: 40%;
+        margin-left: 30%;
+    }
+    .skills .skill-item h4{
+        font-size: 25px;
+    }
+    .devider {
+        margin-top: 30%;
+        width: 95%;
+        height: 4px;
+        margin-left: 0;
+    }
+    
+    .about-content .Aboutrow .education {
+        flex: 0 0 100%;
+        max-width: 100%;
+        
+    }
+    .about-content .Aboutrow .education h3{
+        font-size: 25px;
+    }
+    .about-content .Aboutrow .education .timeline-div, .about-content .Aboutrow .experience .timeline-div {
+        padding-left: 0px;
+    }
+    .about-content .Aboutrow .education .Aboutrow .timeline-div .timeline .timeline-item h4{
+        font-size: 20px;
+    }
+    .about-content .Aboutrow .education .Aboutrow .timeline-div .timeline .timeline-item p{
+        font-size: 15px;
+    }
+    .about-content .Aboutrow .education .Aboutrow .timeline-div .timeline .timeline-item .calendar{
+        font-size: 20px;
+    }
+    .about-content .Aboutrow .education .Aboutrow .timeline-div .timeline .timeline-item h3{
+        font-size: 20px;
+    }
+
+    .about-content .Aboutrow .experience {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .about-content .Aboutrow .experience h3{
+        font-size: 25px;
+    }
+    .about-content .Aboutrow .experience .Aboutrow .timeline-div .timeline .timeline-item h4{
+        font-size: 20px;
+    }
+    .about-content .Aboutrow .experience .Aboutrow .timeline-div .timeline .timeline-item p{
+        font-size: 15px;
+    }
+
+    .about-content .Aboutrow .experience .Aboutrow .timeline-div .timeline .timeline-item .calendar{
+        font-size: 20px;
+    }
+    .about-content .Aboutrow .experience .Aboutrow .timeline-div .timeline .timeline-item h3{
+        font-size: 20px;
+    }
+
 }

@@ -13,7 +13,7 @@ import '../css/services.css';
 
 function Services() { 
     return (
-        <section className='section-about' id='about'>
+        <section className='section-about'>
            
             <div className='container'>
                 <div className='Aboutrow'>

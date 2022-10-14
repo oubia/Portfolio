@@ -30,36 +30,36 @@ function About() {
             </div>
             <div className="Aboutrow">
               <div class="about-content">
-                <div className="Aboutrow">
+                <div className="Aboutrow first-session">
                   <div className='personal-info'>
-                    <div className="Aboutrow">
-                    <div className="about-text">
-                    <h3>PERSONAL <span>INFO</span></h3>
-                    </div>
-                      <div className='info-item'>
-                        <p>Birthday : <span>14 jun 2000</span></p>
+                    <div className="Aboutrow first-session-aprt1">
+                      <div className="about-text">
+                        <h3>PERSONAL <span>INFO</span></h3>
                       </div>
-                      <div className='info-item'>
-                        <p>Age : <span>22</span></p>
-                      </div>
-                      <div className='info-item'>
-                        <p>Website : <span>www.domain.com</span></p>
-                      </div>
-                      <div className='info-item'>
-                        <p>Email : <span>dev.oubia@gmail.com</span></p>
-                      </div>
-                      <div className='info-item'>
-                        <p>Degree : <span>Bachelor</span></p>
-                      </div>
-                      <div className='info-item'>
-                        <p>Phone : <span>+212 643 49 03 38</span></p>
-                      </div>
-                      <div className='info-item'>
-                        <p>City : <span>Essamouira Morocco</span></p>
-                      </div>
-                      <div className='info-item'>
-                        <p>Work : <span style={{color:"lightgreen"}}>Available</span></p>
-                      </div>
+                        <div className='info-item'>
+                          <p>Birthday : <span>14 jun 2000</span></p>
+                        </div>
+                        <div className='info-item'>
+                          <p>Age : <span>22</span></p>
+                        </div>
+                        <div className='info-item'>
+                          <p>Website : <span>www.domain.com</span></p>
+                        </div>
+                        <div className='info-item'>
+                          <p>Email : <span>dev.oubia@gmail.com</span></p>
+                        </div>
+                        <div className='info-item'>
+                          <p>Degree : <span>Bachelor</span></p>
+                        </div>
+                        <div className='info-item'>
+                          <p>Phone : <span>+212 643 49 03 38</span></p>
+                        </div>
+                        <div className='info-item'>
+                          <p>City : <span>Essamouira Morocco</span></p>
+                        </div>
+                        <div className='info-item'>
+                          <p>Work : <span style={{color:"lightgreen"}}>Available</span></p>
+                        </div>
                     </div>
                     <div className="Aboutrow">
                       <div className='buttons'>
@@ -68,7 +68,7 @@ function About() {
                     </div>
                   </div>
                   <div className='skills'>
-                    <div className='Aboutrow'>
+                    <div className='Aboutrow Aboutrowskill'>
                       <div className='skill-item'>
                         <h4>Arabic</h4>
                         <div className="progressdiv">
