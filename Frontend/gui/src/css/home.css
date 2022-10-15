@@ -43,9 +43,22 @@ body {
 }
 #main section .row .home-description p{
     color:var(--white-color);
-    margin-bottom: 15%;
+    margin-bottom: 5%;
     font-family: 'Roboto Mono', monospace;
     text-align: justify;
+
+}
+
+.social-links{
+    width: 100%;
+    margin-bottom: 2%;
+}
+.linkedIn{
+    margin-right: 3%;
+}
+.links{
+    width:5%;
+    
 
 }
 .connectBtn{

@@ -12,14 +12,12 @@ function Contact() {
         <section className='section-about' id='about'>
            
             <div className='container'>
-                <div className='Aboutrow'>
                     <div className='section-title'>
                         <h2>Contact Me</h2>
                     </div>
-                </div>
                 <h3 className='contact-title'>Do you have any questions?</h3>
                 <h4 className='contact-sub-title'>I am at your service</h4>
-                <div className='Aboutrow'>
+                <div className='contactinforow'>
                     <div className='contact-info-item'>
                         <div className='icon'>
                             <FontAwesomeIcon className='fontawsome' icon={faPhone} />

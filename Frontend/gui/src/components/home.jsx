@@ -4,6 +4,9 @@ import {Container, Row,Col} from 'react-bootstrap'
 import '../css/home.css';
 import {ArrowRightCircle} from 'react-bootstrap-icons';
 import headerImg from "../assets/avatar.png"
+import { FaLinkedin } from 'react-icons/fa'
+import { FaGithub} from 'react-icons/fa'
+import { IconContext } from "react-icons";
 
 
 function Home() { 
@@ -51,8 +54,18 @@ function Home() {
               <span className='tagline'>Welcome to my Portfolio</span>
               <h1>{`Hi I'm Oubia`}<span className='warp'> {text}</span></h1>
               <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever sincethe 1500s, when an unknown printer took a galley</p>
+              
+              
               <button onClick={()=>console.log('connect selected')} className='connectBtn' href='/contact'>Let's connect<span> </span>
               </button>
+              <div className='social-links'>
+                <IconContext.Provider value={{ color: "#afbf48",className: "linkedIn", size: '1%' }}>
+                  <FaLinkedin className='links' />
+                </IconContext.Provider>
+                <IconContext.Provider value={{ color: "#ffffff", className: "Github",size: '1%' }} >
+                  <FaGithub className='links' />
+                </IconContext.Provider>
+              </div>
             </div>
             <div className='home-image'>
               <img src={headerImg} alt="Header Img"/>

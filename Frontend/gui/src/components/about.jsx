@@ -1,5 +1,4 @@
 import React from 'react';
-import {Container, Row,Col} from 'react-bootstrap'
 import '../css/about.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faDownload } from '@fortawesome/free-solid-svg-icons'
@@ -70,7 +69,7 @@ function About() {
                   <div className='skills'>
                     <div className='Aboutrow Aboutrowskill'>
                       <div className='skill-item'>
-                        <h4>Arabic</h4>
+                        <h4 className='cricletitle'>Arabic</h4>
                         <div className="progressdiv">
                           <CircularProgressbar value={100} text={`${100}%`}styles={buildStyles({
                             pathColor: `rgb(92, 11, 8, ${100 / 100})`,
@@ -81,7 +80,7 @@ function About() {
                         </div>
                       </div>
                       <div className='skill-item'>
-                        <h4>English</h4>
+                        <h4 className='cricletitle'>English</h4>
                         <div className="progressdiv">
                           <CircularProgressbar value={80} text={`${80}%`} styles={buildStyles({
                             pathColor: `rgb(92, 11, 8, ${100 / 100})`,
@@ -92,7 +91,7 @@ function About() {
                         </div>
                       </div>
                       <div className='skill-item'>
-                        <h4>French</h4>
+                        <h4 className='cricletitle'>French</h4>
                         <div className="progressdiv">
                           <CircularProgressbar value={70} text={`${70}%`} styles={buildStyles({
                             pathColor: `rgb(92, 11, 8, ${100 / 100})`,
@@ -103,7 +102,7 @@ function About() {
                         </div>
                       </div>
                       <div className='skill-item'>
-                        <h4>Espangol</h4>
+                        <h4 className='cricletitle'>Espangol</h4>
                         <div className="progressdiv">
                           <CircularProgressbar value={10} text={`${10}%`} styles={buildStyles({
                             pathColor: `rgb(92, 11, 8, ${100 / 100})`,
@@ -128,7 +127,7 @@ function About() {
                     <div className="progressdiv1">
                       <h4>PYTHON</h4>
                         <div className="progress-div" style={{width: `${200}px`}}>
-                          <div style={{width: `${value}px`}} className="progress">
+                          <div style={{width: `${180}px`}} className="progress">
                           </div>
                         </div>
                     </div>

@@ -181,10 +181,17 @@
     box-shadow: 0px 0px 10px rgba(175, 191, 72 ,0.116);
     
 }
+.skills .skill-item:hover{
+    box-shadow: 0px 0px 10px rgba(175, 191, 72, 0.747);
+    
+}
 .skills .skill-item h4{
     padding:10px;
     color:var(--white-color);
     font-family: 'Roboto Mono', monospace;
+}
+.cricletitle{
+    margin-bottom: 0px;
 }
 
 .progressdiv{
@@ -262,6 +269,11 @@
     margin-top: 40px;
     padding-left:15px;
     padding-right:15px;
+}
+.about-content .Aboutrow .education .timeline-div .timeline:hover ,
+.about-content .Aboutrow .experience .timeline-div .timeline:hover{
+    box-shadow: 0px 0px 10px rgba(175, 191, 72, 0.747);
+
 }
 
 .about-content .Aboutrow .experience{
