@@ -1,8 +1,6 @@
 import { useState,useEffect } from 'react';
 import React from 'react';
-import {Container, Row,Col} from 'react-bootstrap'
 import '../css/home.css';
-import {ArrowRightCircle} from 'react-bootstrap-icons';
 import headerImg from "../assets/avatar.png"
 import { FaLinkedin } from 'react-icons/fa'
 import { FaGithub} from 'react-icons/fa'
@@ -44,6 +42,7 @@ function Home() {
       setDelta(100);
     }
   }
+ 
 
     return (
       <section className='home' id='home'>
@@ -59,11 +58,19 @@ function Home() {
               <button onClick={()=>console.log('connect selected')} className='connectBtn' href='/contact'>Let's connect<span> </span>
               </button>
               <div className='social-links'>
-                <IconContext.Provider value={{ color: "#afbf48",className: "linkedIn", size: '1%' }}>
+                <IconContext.Provider  value={{ color: "#afbf48",className: "linkedIn", size: '1%' }}>
+                  <a href="https://github.com/oubia"
+                          target="_blank">
                   <FaLinkedin className='links' />
+                  </a>
+
                 </IconContext.Provider>
                 <IconContext.Provider value={{ color: "#ffffff", className: "Github",size: '1%' }} >
+                <a href="https://github.com/oubia"
+                          target="_blank">
                   <FaGithub className='links' />
+                </a>
+                
                 </IconContext.Provider>
               </div>
             </div>
@@ -71,6 +78,7 @@ function Home() {
               <img src={headerImg} alt="Header Img"/>
             </div>
           </div>
+          
       </section>
     );
   }
