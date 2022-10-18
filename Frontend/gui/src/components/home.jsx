@@ -59,7 +59,7 @@ function Home() {
               </button>
               <div className='social-links'>
                 <IconContext.Provider  value={{ color: "#afbf48",className: "linkedIn", size: '1%' }}>
-                  <a href="https://github.com/oubia"
+                  <a href="https://www.linkedin.com/in/oubia-mohammed-724b32189/"
                           target="_blank">
                   <FaLinkedin className='links' />
                   </a>
@@ -75,7 +75,7 @@ function Home() {
               </div>
             </div>
             <div className='home-image'>
-              <img src={headerImg} alt="Header Img"/>
+              <img src={headerImg} className='homeImg' alt="Header Img"/>
             </div>
           </div>
           

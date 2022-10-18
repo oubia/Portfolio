@@ -6,7 +6,9 @@ import { faUser } from '@fortawesome/free-solid-svg-icons'
 import { faList } from '@fortawesome/free-solid-svg-icons'
 import { faBriefcase} from '@fortawesome/free-solid-svg-icons'
 import { faComments } from '@fortawesome/free-solid-svg-icons'
-import { useState } from 'react'
+
+import { Link} from 'react-router-dom';
+
 function Aside(props) {
   
   return (
@@ -100,8 +102,11 @@ function Aside(props) {
                     </div>}
                   </a>
                 </li>
+                
               </div>
+              
             </ul>
+            
     </aside>
   );
 }

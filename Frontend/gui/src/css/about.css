@@ -483,6 +483,7 @@
         font-size: 25px;
     }
     
+    
 }
 
 @media (max-width:550px){
@@ -582,5 +583,5 @@
     .about-content .Aboutrow .experience .Aboutrow .timeline-div .timeline .timeline-item h3{
         font-size: 20px;
     }
-
+   
 }

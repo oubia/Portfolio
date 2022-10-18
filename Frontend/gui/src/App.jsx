@@ -8,7 +8,7 @@ import AnimatedCursor from "react-animated-cursor"
 import Portfolio from "./components/Portfolio"
 import Contact from './components/contact'
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-
+import AnimationPage from './components/anim/animation'
 function App() {
   return (
     
@@ -25,17 +25,21 @@ function App() {
     />
       
      <main className="center-content" id='main'>
+
       <BrowserRouter>
-        <Routes>
+        <AnimationPage>
 
-          <Route path="/" element={<Home />}/>
-          <Route path="/about" element={<About />}/>
-          <Route path="/services" element={<Services /> } />
-          <Route path="/portfolio" element={<Portfolio />} />
-          <Route path="/contact" element={<Contact />} />
+          <Routes>
+              <Route path="/" element={<Home />}/>
+              <Route path="/about" element={<About />}/>
+              <Route path="/services" element={<Services /> } />
+              <Route path="/portfolio" element={<Portfolio />} />
+              <Route path="/contact" element={<Contact />} />
+          </Routes>
+        </AnimationPage>
 
-        </Routes>
       </BrowserRouter>
+
      </main>
      <Aside data={window.location.pathname}/>
       <BottomBanner data={window.location.pathname}/>

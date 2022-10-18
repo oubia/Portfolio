@@ -18,7 +18,7 @@ body {
     margin:10px;
 
 }
-.home-image img {
+.home-image .homeImg {
     margin-right:10px;
     height:70vh;
 }
@@ -165,7 +165,7 @@ body::-webkit-scrollbar-thumb:hover {
         padding-right: 8%;
 
     }
-    .home-image img{
+    .home-image .homeImg{
         height:20%;
         position: relative;
         width: 60%;

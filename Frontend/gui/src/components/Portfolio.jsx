@@ -41,7 +41,7 @@ function Portfolio() {
                         
                     />
                     <Box borderStyle="shadow" padding={6} rounding={2} >
-                        <Text >{content[itemIndex]}</Text>
+                        <div className='Aboutrow'>{content[itemIndex]}</div>
                     </Box>
                 </Flex>
         </div>

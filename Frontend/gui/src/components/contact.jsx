@@ -5,6 +5,9 @@ import { faPhone } from '@fortawesome/free-solid-svg-icons'
 import { faMapMarked} from '@fortawesome/free-solid-svg-icons'
 import { faMessage } from '@fortawesome/free-solid-svg-icons'
 import { faEarth } from '@fortawesome/free-solid-svg-icons'
+import { FaLinkedin } from 'react-icons/fa'
+import { FaGithub} from 'react-icons/fa'
+import { IconContext } from "react-icons";
 
 
 function Contact() { 
@@ -78,6 +81,22 @@ function Contact() {
                         <div className='Aboutrow'>
                             <button type='submit' className='connectBtn sendmessagebtn'>Send Message</button>
                         </div>
+                        <div className='social-links'>
+                        <IconContext.Provider  value={{ color: "#afbf48",className: "linkedIn", size: '0.5%' }}>
+                        <a href="https://www.linkedin.com/in/oubia-mohammed-724b32189/"
+                                target="_blank">
+                        <FaLinkedin className='links' />
+                        </a>
+
+                        </IconContext.Provider>
+                        <IconContext.Provider value={{ color: "#ffffff", className: "Github",size: '0.5%' }} >
+                        <a href="https://github.com/oubia"
+                                target="_blank">
+                        <FaGithub className='links' />
+                        </a>
+                        
+                        </IconContext.Provider>
+                    </div>
                     </div>
                 </div>
             </div>
