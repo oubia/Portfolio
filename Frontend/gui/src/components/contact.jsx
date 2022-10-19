@@ -8,100 +8,122 @@ import { faEarth } from '@fortawesome/free-solid-svg-icons'
 import { FaLinkedin } from 'react-icons/fa'
 import { FaGithub} from 'react-icons/fa'
 import { IconContext } from "react-icons";
+import axios from 'axios'; 
 
-
-function Contact() { 
-    return (
-        <section className='section-about' id='about'>
+class Contact extends Component{ 
+    constructor(props) {
+        super(props);
+         
+        // add the props here
+        this.state = {
+         
+          // the viewCompleted prop represents the status
+          // of the task. Set it to false by default
+          viewCompleted: false,
+          activeItem: {
+            title: "",
+            description: "",
+            completed: false
+          },
            
-            <div className='container'>
-                    <div className='section-title'>
-                        <h2>Contact Me</h2>
-                    </div>
-                <h3 className='contact-title'>Do you have any questions?</h3>
-                <h4 className='contact-sub-title'>I am at your service</h4>
-                <div className='contactinforow'>
-                    <div className='contact-info-item'>
-                        <div className='icon'>
-                            <FontAwesomeIcon className='fontawsome' icon={faPhone} />
+          // this list stores all the completed tasks
+          taskList: []
+        };
+      }
+    render(){
+        return (
+            <section className='section-about' id='about'>
+               
+                <div className='container'>
+                        <div className='section-title'>
+                            <h2>Contact Me</h2>
                         </div>
-                        <h4>call Us on</h4>
-                        <p>+212 643 490 338</p>
-                    </div>
-                    <div className='contact-info-item'>
-                        <div className='icon'>
-                                <FontAwesomeIcon className='fontawsome' icon={faMapMarked} />
+                    <h3 className='contact-title'>Do you have any questions?</h3>
+                    <h4 className='contact-sub-title'>I am at your service</h4>
+                    <div className='contactinforow'>
+                        <div className='contact-info-item'>
+                            <div className='icon'>
+                                <FontAwesomeIcon className='fontawsome' icon={faPhone} />
                             </div>
-                            <h4>Location</h4>
-                            <p>Essaouira,Morocco</p>
+                            <h4>call Us on</h4>
+                            <p>+212 643 490 338</p>
+                        </div>
+                        <div className='contact-info-item'>
+                            <div className='icon'>
+                                    <FontAwesomeIcon className='fontawsome' icon={faMapMarked} />
+                                </div>
+                                <h4>Location</h4>
+                                <p>Essaouira,Morocco</p>
+                        </div>
+                        <div className='contact-info-item'>
+                            <div className='icon'>
+                                    <FontAwesomeIcon className='fontawsome' icon={faMessage} />
+                                </div>
+                                <h4>Email</h4>
+                                <p>dev.oubia@gmail.com</p>
+                        </div>
+                        <div className='contact-info-item'>
+                            <div className='icon'>
+                                    <FontAwesomeIcon className='fontawsome' icon={faEarth} />
+                                </div>
+                                <h4>Website</h4>
+                                <p>www.domain.com</p>
+                        </div>
                     </div>
-                    <div className='contact-info-item'>
-                        <div className='icon'>
-                                <FontAwesomeIcon className='fontawsome' icon={faMessage} />
+                    <div className='Aboutrow'>
+                        <div className='contact-form'>
+                            <div className='Aboutrow'>
+                                <div className='from-item col-6 nameform'>
+                                    <div className='form-group'>
+                                        <input type="text" className='form-control' placeholder='Name'></input>
+                                    </div>
+                                </div>
+                                <div className='from-item col-6 emailform'>
+                                    <div className='form-group'>
+                                        <input type="email" className='form-control' placeholder='Email'></input>
+                                    </div>
+                                </div>
                             </div>
-                            <h4>Email</h4>
-                            <p>dev.oubia@gmail.com</p>
-                    </div>
-                    <div className='contact-info-item'>
-                        <div className='icon'>
-                                <FontAwesomeIcon className='fontawsome' icon={faEarth} />
+                            <div className='Aboutrow'>
+                                <div className='from-item col-12'>
+                                    <div className='form-group'>
+                                        <input type="text" className='form-control' placeholder='Subject'></input>
+                                    </div>
+                                </div>
                             </div>
-                            <h4>Website</h4>
-                            <p>www.domain.com</p>
+                            <div className='Aboutrow'>
+                                <div className='from-item col-12'>
+                                    <div className='form-group'>
+                                        <textarea name='' className="form-control textArea" id="" placeholder='Message'></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='Aboutrow'>
+                                <button type='submit' className='connectBtn sendmessagebtn'>Send Message</button>
+                            </div>
+                            <div className='social-links'>
+                            <IconContext.Provider  value={{ color: "#afbf48",className: "linkedIn", size: '0.5%' }}>
+                            <a href="https://www.linkedin.com/in/oubia-mohammed-724b32189/"
+                                    target="_blank">
+                            <FaLinkedin className='links' />
+                            </a>
+    
+                            </IconContext.Provider>
+                            <IconContext.Provider value={{ color: "#ffffff", className: "Github",size: '0.5%' }} >
+                            <a href="https://github.com/oubia"
+                                    target="_blank">
+                            <FaGithub className='links' />
+                            </a>
+                            
+                            </IconContext.Provider>
+                        </div>
+                        </div>
                     </div>
                 </div>
-                <div className='Aboutrow'>
-                    <div className='contact-form'>
-                        <div className='Aboutrow'>
-                            <div className='from-item col-6 nameform'>
-                                <div className='form-group'>
-                                    <input type="text" className='form-control' placeholder='Name'></input>
-                                </div>
-                            </div>
-                            <div className='from-item col-6 emailform'>
-                                <div className='form-group'>
-                                    <input type="email" className='form-control' placeholder='Email'></input>
-                                </div>
-                            </div>
-                        </div>
-                        <div className='Aboutrow'>
-                            <div className='from-item col-12'>
-                                <div className='form-group'>
-                                    <input type="text" className='form-control' placeholder='Subject'></input>
-                                </div>
-                            </div>
-                        </div>
-                        <div className='Aboutrow'>
-                            <div className='from-item col-12'>
-                                <div className='form-group'>
-                                    <textarea name='' className="form-control textArea" id="" placeholder='Message'></textarea>
-                                </div>
-                            </div>
-                        </div>
-                        <div className='Aboutrow'>
-                            <button type='submit' className='connectBtn sendmessagebtn'>Send Message</button>
-                        </div>
-                        <div className='social-links'>
-                        <IconContext.Provider  value={{ color: "#afbf48",className: "linkedIn", size: '0.5%' }}>
-                        <a href="https://www.linkedin.com/in/oubia-mohammed-724b32189/"
-                                target="_blank">
-                        <FaLinkedin className='links' />
-                        </a>
-
-                        </IconContext.Provider>
-                        <IconContext.Provider value={{ color: "#ffffff", className: "Github",size: '0.5%' }} >
-                        <a href="https://github.com/oubia"
-                                target="_blank">
-                        <FaGithub className='links' />
-                        </a>
-                        
-                        </IconContext.Provider>
-                    </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    );
+            </section>
+        );
+    }
+    
 }
 
 export default Contact;

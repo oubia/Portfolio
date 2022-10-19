@@ -7,3 +7,4 @@ class Contact(models.Model):
     Email = models.EmailField(max_length=200)
     Subject = models.CharField(max_length=200)
     Message = models.CharField(max_length=1000)
+
