@@ -2,8 +2,6 @@ import { Box, Flex, Icon, SegmentedControl, Text } from "gestalt";
 import React from 'react';
 import "E:/homy/Portfolio/Portfolio/Frontend/gui/node_modules/gestalt/dist/gestalt.css"
 import All from './porfolio_material/all'
-import About from '../components/about'
-import Services from '../components/services'
 import '../css/portfolio.css';
 
 function Portfolio() { 

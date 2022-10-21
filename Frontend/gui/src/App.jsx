@@ -10,6 +10,28 @@ import Contact from './components/contact'
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import AnimationPage from './components/anim/animation'
 function App() {
+  const sendEmail = (item) => {
+    // let items = data["items"];
+   console.log(item)
+    if(item['name']!= ''&& item['email']!='' && item['subject'] != '' && item['message']!=''){
+      const requestOptions = {
+        method: "POST",
+        headers: {
+          "content-type": "application/json",
+        },
+        body: JSON.stringify(item),
+      };
+      fetch("http://127.0.0.1:8000/contact/", requestOptions)
+        .then((response) => response.json())
+        .then((data) => {
+          alert("Thank you your email had been sent successfuly");
+        });
+    }else{
+      alert("please enter correct e-mail");
+    }
+
+
+  };
   return (
     
 
@@ -34,7 +56,7 @@ function App() {
               <Route path="/about" element={<About />}/>
               <Route path="/services" element={<Services /> } />
               <Route path="/portfolio" element={<Portfolio />} />
-              <Route path="/contact" element={<Contact />} />
+              <Route path="/contact" element={<Contact  sendEmail={sendEmail}/>} />
           </Routes>
         </AnimationPage>
 
