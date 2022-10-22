@@ -55,23 +55,91 @@
     background-color: var(--background-color);
     transform: translate(-50%,-50%);
     width: 50%;
-    height:80%;
+    height:50%;
     top: 50%;
     left:50%;
+    bottom: 50%;
     border-radius: 10px;
+    overflow: scroll;
+
 }
 .modal .closeButtonModal {
     display: flex;
 }
 .modal .closeButtonModal .closeDiv{
-    left:100%;
     border-radius: 50%;
-    border: 1px solid var(--white-color);
-    width: 30px;
-    height: 30px;
-    display: flex;
-    justify-content: center
+    width: 100%;
+    height: 100%;
+    align-items: center;    
 }
 .modal .closeButtonModal .closeDiv .fontawsome{
     color: var(--white-color);
+    width: 25px;
+    height: 25px;
+    transform: 1s;
+    margin-bottom:5px;
+    margin-right: 30px;
+    position: absolute;
+}
+.fontawsomeAll{
+    margin-right: 10px;
+}
+.modal .closeButtonModal .closeDiv:hover .fontawsome{
+    color: var(--light-main);
+    width: 30px;
+    height: 30px;
+    transform: 1s;
+}
+.about-content{
+    flex:0 0 100%;
+    max-width: 100%;
+    
+}
+.about-content .about-text{
+    flex:0 0 100%;
+    max-width: 100%;
+    padding-left:15px;
+    padding-right:15px;
+}
+.about-content p{
+    font-size: 16px;
+    line-height:25px;
+    color:var(--white-color);
+    font-family: 'Roboto Mono', monospace;
+}
+
+.about-content .personal-info {
+    flex:0 0 100%;
+    max-width: 100%;
+    margin-top: 40px;
+    padding-left:15px;
+    padding-right:15px;
+}
+
+.about-content .personal-info .info-item{
+    flex:0 0 50%;
+    max-width: 50%;
+    padding-left:15px;
+    padding-right:15px;
+}
+
+.about-content .personal-info .info-item p{
+    
+    font-weight: 10px;
+    color: var(--white-color);
+    padding: 10px 0;
+    font-size:14px;
+    border-bottom: 1px solid var(--light-main);
+    font-family: 'Roboto Mono', monospace;
+}
+.about-content .personal-info .info-item p span a{
+    font-weight: 10px;
+    color: var(--white-color);
+    font-size:14px;
+    border-bottom: 1px solid var(--light-main);
+    font-family: 'Roboto Mono', monospace;
+    
+}
+.about-content .personal-info .info-item p span{
+    margin-right: 10px;
 }

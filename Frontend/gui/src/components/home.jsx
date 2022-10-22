@@ -55,8 +55,10 @@ function Home() {
               <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever sincethe 1500s, when an unknown printer took a galley</p>
               
               
-              <button onClick={()=>console.log('connect selected')} className='connectBtn' href='/contact'>Let's connect<span> </span>
+              <a href='/contact/'>
+              <button onClick={()=>console.log('connect selected')} className='connectBtn' >Let's connect<span> </span>
               </button>
+              </a>
               <div className='social-links'>
                 <IconContext.Provider  value={{ color: "#afbf48",className: "linkedIn", size: '1%' }}>
                   <a href="https://www.linkedin.com/in/oubia-mohammed-724b32189/"
