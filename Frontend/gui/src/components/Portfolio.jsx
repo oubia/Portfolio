@@ -1,12 +1,12 @@
 import { Box, Flex, Icon, SegmentedControl, Text } from "gestalt";
-import React from 'react';
+import React,{useState,useEffect} from 'react';
 import "E:/homy/Portfolio/Portfolio/Frontend/gui/node_modules/gestalt/dist/gestalt.css"
 import All from './porfolio_material/all'
 import '../css/portfolio.css';
 
-function Portfolio() { 
+function Portfolio(props) { 
 
-    const [itemIndex, setItemIndex] = React.useState(0);
+    const [itemIndex, setItemIndex] = useState(0);
 
     const items = [
     'Web Development',
@@ -15,6 +15,13 @@ function Portfolio() {
     'DataBase',
     ];
 
+    // const [all,setAll] = useState('')
+    // const [web,setWeb] = useState('')
+    // const [mobile,setMobile] = useState('')
+    // const [ml,setMl] = useState('')
+    // const [db,setDb] = useState('')
+
+    
     const content = [
         <All/>,
         <All/>,
@@ -39,7 +46,7 @@ function Portfolio() {
                         
                     />
                     <Box borderStyle="shadow" padding={6} rounding={2} >
-                        <div className='Aboutrow'>{content[itemIndex]}</div>
+                        {content[itemIndex]}
                     </Box>
                 </Flex>
         </div>

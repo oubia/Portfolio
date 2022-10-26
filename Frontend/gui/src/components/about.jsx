@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useState,useEffect} from 'react';
 import '../css/about.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faDownload } from '@fortawesome/free-solid-svg-icons'
@@ -9,9 +9,18 @@ import 'react-circular-progressbar/dist/styles.css';
 
 
 
-function About() {
-
+function About(props) {
+  const [resmue,setResume] = useState('')
+  
   const [value, setValue] = React.useState(0);
+  useEffect (()=>{
+    fetch("http://127.0.0.1:8000/resume/")
+    .then((response) => response.json())
+    .then((data) => {
+      setResume(data)
+
+    });
+  },[]);
 
     React.useEffect(() => {
       setValue(100);
@@ -28,7 +37,7 @@ function About() {
                 </div>
             </div>
             <div className="Aboutrow">
-              <div class="about-content">
+              <div className="about-content">
                 <div className="Aboutrow first-session">
                   <div className='personal-info'>
                     <div className="Aboutrow first-session-aprt1">
@@ -206,87 +215,46 @@ function About() {
                       <div className="Aboutrow">
                         <div className='timeline-div'>
                           <div className='timeline shadow-box'>
-                            <div className='timeline-item'>
+                          {Array.from(resmue).map((e) => (
+                              e.Type=="Education"?<div className='timeline-item'>
                               <div className='circle-dot'></div>
                               <h3 className='timeline-date'>
-                                <FontAwesomeIcon className='calendar' icon={faCalendar} />2022 - 2022                         
+                                <FontAwesomeIcon className='calendar' icon={faCalendar} />{e.Date}                    
                               </h3>
-                              <h4 className='timeline-title'>Bachlordegree</h4>
+                              <h4 className='timeline-title'>{e.Title}</h4>
                               <p className='timeline-text'>
-                              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
-                              labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-                              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                              cillum dolore eu fugiat nulla pariatur. 
-                              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                              </p>
-                            </div>
-
-                            <div className='timeline-item'>
-                              <div className='circle-dot'></div>
-                              <h3 className='timeline-date'>
-                                <FontAwesomeIcon className='calendar' icon={faCalendar} />2022 - 2022                    
-                              </h3>
-                              <h4 className='timeline-title'>Bachlordegree</h4>
-                              <p className='timeline-text'>
-                              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
-                              labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-                              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                              cillum dolore eu fugiat nulla pariatur. 
-                              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                              </p>
-                            </div>
-
+                                {e.Description}
+                               </p>
+                            </div>:<div></div>
+                          ))}
                           </div>
                         </div>
                       </div>
                     </div>
-                    
                     <div className='experience'>
                       <h3 className='title'>Experience</h3>
                       <div className="Aboutrow">
                         <div className='timeline-div'>
                           <div className='timeline shadow-box'>
+                          {Array.from(resmue).map((e) => (
+                              e.Type=="Experience"?
                             <div className='timeline-item'>
                               <div className='circle-dot'></div>
                               <h3 className='timeline-date'>
-                                <FontAwesomeIcon className='calendar' icon={faCalendar} />2022 - 2022                         
+                                <FontAwesomeIcon className='calendar' icon={faCalendar} />{e.Date}                         
                               </h3>
-                              <h4 className='timeline-title'>Bachlordegree</h4>
+                              <h4 className='timeline-title'>{e.Title}</h4>
                               <p className='timeline-text'>
-                              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
-                              labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-                              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                              cillum dolore eu fugiat nulla pariatur. 
-                              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                              {e.Description}
                               </p>
-                            </div>
-
-                            <div className='timeline-item'>
-                              <div className='circle-dot'></div>
-                              <h3 className='timeline-date'>
-                                <FontAwesomeIcon className='calendar' icon={faCalendar} />2022 - 2022                         
-                              </h3>
-                              <h4 className='timeline-title'>Bachlordegree</h4>
-                              <p className='timeline-text'>
-                              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
-                              labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-                              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                              cillum dolore eu fugiat nulla pariatur. 
-                              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                              </p>
-                            </div>
-
+                            </div>:<></>
+                          ))}
                           </div>
                         </div>
                       </div>
                     </div>
-                    
                   </div>
                 </div>
-
-              
-              
-
           </div>
         </div>
 

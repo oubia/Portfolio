@@ -90,25 +90,20 @@
     height: 30px;
     transform: 1s;
 }
-.about-content{
+.all-content{
     flex:0 0 100%;
     max-width: 100%;
     
 }
-.about-content .about-text{
-    flex:0 0 100%;
-    max-width: 100%;
-    padding-left:15px;
-    padding-right:15px;
-}
-.about-content p{
+
+.all-content p{
     font-size: 16px;
     line-height:25px;
     color:var(--white-color);
     font-family: 'Roboto Mono', monospace;
 }
 
-.about-content .personal-info {
+.all-content .all-info {
     flex:0 0 100%;
     max-width: 100%;
     margin-top: 40px;
@@ -116,14 +111,14 @@
     padding-right:15px;
 }
 
-.about-content .personal-info .info-item{
+.all-content .all-info .info-item-all{
     flex:0 0 50%;
     max-width: 50%;
     padding-left:15px;
     padding-right:15px;
 }
 
-.about-content .personal-info .info-item p{
+.all-content .all-info .info-item-all p{
     
     font-weight: 10px;
     color: var(--white-color);
@@ -132,7 +127,7 @@
     border-bottom: 1px solid var(--light-main);
     font-family: 'Roboto Mono', monospace;
 }
-.about-content .personal-info .info-item p span a{
+.all-content .all-info .info-item-all p span a{
     font-weight: 10px;
     color: var(--white-color);
     font-size:14px;
@@ -140,6 +135,6 @@
     font-family: 'Roboto Mono', monospace;
     
 }
-.about-content .personal-info .info-item p span{
+.all-content .all-info .info-item-all p span{
     margin-right: 10px;
 }

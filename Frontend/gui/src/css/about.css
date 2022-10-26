@@ -263,7 +263,8 @@
 
 
 
-.about-content .Aboutrow .education{
+.about-content .Aboutrow .education,
+.about-content .Aboutrow .experience{
     flex:0 0 50%;
     max-width: 50%;
     margin-top: 40px;
@@ -276,14 +277,6 @@
 
 }
 
-.about-content .Aboutrow .experience{
-    flex:0 0 50%;
-    max-width: 50%;
-    margin-top: 40px;
-    padding-left:15px;
-    padding-right:15px;
-
-}
 .about-content .Aboutrow .education h3, 
 .about-content .Aboutrow .experience h3{
     font-size:20px;
@@ -321,10 +314,7 @@
     padding-bottom: 50px;
 }
 
-.about-content .Aboutrow .education .timeline .timeline-item:last-child,
-.about-content .Aboutrow .experience .timeline .timeline-item:last-child{
-    padding-bottom: 0px;
-}
+
 
 .about-content .Aboutrow .education .timeline .timeline-item::before,
 .about-content .Aboutrow .experience .timeline .timeline-item::before{

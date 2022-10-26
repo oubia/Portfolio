@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useEffect,useState} from 'react';
 import Aside from './components/aside';
 import BottomBanner from './components/bottomBanner';
 import Home from './components/home'
@@ -10,6 +10,8 @@ import Contact from './components/contact'
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import AnimationPage from './components/anim/animation'
 function App() {
+  
+  
   const sendEmail = (item) => {
     // let items = data["items"];
    console.log(item)
@@ -53,7 +55,7 @@ function App() {
 
           <Routes>
               <Route path="/" element={<Home />}/>
-              <Route path="/about" element={<About />}/>
+              <Route path="/about" element={<About  />} />
               <Route path="/services" element={<Services /> } />
               <Route path="/portfolio" element={<Portfolio />} />
               <Route path="/contact" element={<Contact  sendEmail={sendEmail}/>} />
