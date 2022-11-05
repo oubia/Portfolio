@@ -10,31 +10,31 @@ import { faExternalLink} from '@fortawesome/free-solid-svg-icons'
 
 function All(props) { 
   const [open, setOpen] = useState(false)
-  // const [project,setProject] = useState('')
+  const [project,setProject] = useState('')
 
-  // const datanew = []
-  //   useEffect (()=>{
-  //       fetch("http://127.0.0.1:8000/project/")
-  //       .then((response) => response.json())
-  //       .then((data) => {
-  //         setProject(data)
-  //       });
-  //       Array.from(project).map((e)=>{
-  //           if(e.Type == "Web Development"){
-  //               datanew.push(e);
-  //           }
-  //       })
-  //       Array.from(datanew).map((e) => (
-  //         console.log("inside fr",e)
-  //       ));
-  //   },[]);
+  const datanew = []
+    useEffect (()=>{
+        fetch("http://127.0.0.1:8000/project/")
+        .then((response) => response.json())
+        .then((data) => {
+          setProject(data)
+        });
+        Array.from(project).map((e)=>{
+            if(e.Type == "Web Development"){
+                datanew.push(e);
+            }
+        })
+        Array.from(datanew).map((e) => (
+          console.log("inside fr",e)
+        ));
+    },[]);
 // 
       return (
         <div className='Aboutrow'>
-          
+          {Array.from(datanew).map((e) => (
             <><div className='portfolio-item' onClick={() => setOpen(true)}>
               <div className='portfolio-item-inner'>
-                <img className='portfolioImage' src={siteImg} />
+                <img className='portfolioImage' src={`http://localhost:8000${e.img}`} />
               </div>
             </div>
             <Modal className="modal" isOpen={open} onClose={() => setOpen(false)}>
@@ -62,6 +62,8 @@ function All(props) {
                   </div>
                 </div>
               </Modal></>
+          ))}
+            
        
         </div>
       );

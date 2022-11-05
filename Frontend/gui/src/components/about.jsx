@@ -45,13 +45,14 @@ function About(props) {
                         <h3>PERSONAL <span>INFO</span></h3>
                       </div>
                         <div className='info-item'>
-                          <p>Birthday : <span>14 jun 2000</span></p>
+                          <p>Birthday : <span>14 Jun 2000</span></p>
                         </div>
                         <div className='info-item'>
                           <p>Age : <span>22</span></p>
                         </div>
                         <div className='info-item'>
-                          <p>Website : <span>www.domain.com</span></p>
+                          <p>Website : <span><a href="www.oubia.me"
+                          target="_blank"> www.oubia.me</a></span></p>
                         </div>
                         <div className='info-item'>
                           <p>Email : <span>dev.oubia@gmail.com</span></p>
@@ -63,10 +64,10 @@ function About(props) {
                           <p>Phone : <span>+212 643 49 03 38</span></p>
                         </div>
                         <div className='info-item'>
-                          <p>City : <span>Essamouira Morocco</span></p>
+                          <p>City : <span>Essaouira Morocco</span></p>
                         </div>
                         <div className='info-item'>
-                          <p>Work : <span style={{color:"lightgreen"}}>Available</span></p>
+                          <p>Work : <span style={{color:"lightgreen"}} className='Availabel'><h3>Available</h3></span></p>
                         </div>
                     </div>
                     <div className="Aboutrow">
@@ -144,7 +145,7 @@ function About(props) {
                     <div className="progressdiv1">
                       <h4>JAVA</h4>
                         <div className="progress-div" style={{width: `${200}px`}}>
-                          <div style={{width: `${180}px`}} className="progress">
+                          <div style={{width: `${160}px`}} className="progress">
                           </div>
                         </div>
                     </div>
@@ -160,7 +161,7 @@ function About(props) {
                     <div className="progressdiv1">
                       <h4>DART</h4>
                         <div className="progress-div" style={{width: `${200}px`}}>
-                          <div style={{width: `${180}px`}} className="progress">
+                          <div style={{width: `${120}px`}} className="progress">
                           </div>
                         </div>
                     </div>
@@ -173,11 +174,19 @@ function About(props) {
                           </div>
                         </div>
                     </div>
+                    
+                    <div className="progressdiv1">
+                      <h4>NodeJs</h4>
+                        <div className="progress-div" style={{width: `${200}px`}}>
+                          <div style={{width: `${150}px`}} className="progress">
+                          </div>
+                        </div>
+                    </div>
 
                     <div className="progressdiv1">
                       <h4>FLLUTER</h4>
                         <div className="progress-div" style={{width: `${200}px`}}>
-                          <div style={{width: `${180}px`}} className="progress">
+                          <div style={{width: `${120}px`}} className="progress">
                           </div>
                         </div>
                     </div>
@@ -186,7 +195,7 @@ function About(props) {
                     <div className="progressdiv1">
                       <h4>REACT</h4>
                         <div className="progress-div" style={{width: `${200}px`}}>
-                          <div style={{width: `${180}px`}} className="progress">
+                          <div style={{width: `${170}px`}} className="progress">
                           </div>
                         </div>
                     </div>
@@ -199,6 +208,32 @@ function About(props) {
                           </div>
                         </div>
                     </div>
+
+                    <div className="progressdiv1">
+                      <h4>HTML</h4>
+                        <div className="progress-div" style={{width: `${200}px`}}>
+                          <div style={{width: `${180}px`}} className="progress">
+                          </div>
+                        </div>
+                    </div>
+
+                    <div className="progressdiv1">
+                      <h4>CSS</h4>
+                        <div className="progress-div" style={{width: `${200}px`}}>
+                          <div style={{width: `${150}px`}} className="progress">
+                          </div>
+                        </div>
+                    </div>
+
+                    <div className="progressdiv1">
+                      <h4>BOOTSTRAP</h4>
+                        <div className="progress-div" style={{width: `${200}px`}}>
+                          <div style={{width: `${150}px`}} className="progress">
+                          </div>
+                        </div>
+                    </div>
+                    
+
                 </div>
               </div>
 

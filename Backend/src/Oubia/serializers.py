@@ -5,8 +5,17 @@ from .models import *
  
 # create a serializer class
 class ContactSerializer(serializers.ModelSerializer):
- 
-    # create a meta class
     class Meta:
         model = Contact
+        fields = "__all__"
+
+
+class ProjectSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Project
+        fields = "__all__"
+
+class ResumeSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Resume
         fields = "__all__"

@@ -23,7 +23,7 @@ function App() {
         },
         body: JSON.stringify(item),
       };
-      fetch("http://127.0.0.1:8000/contact/", requestOptions)
+      fetch("http://127.0.0.1:8000/contact-data/", requestOptions)
         .then((response) => response.json())
         .then((data) => {
           alert("Thank you your email had been sent successfuly");

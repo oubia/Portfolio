@@ -83,7 +83,7 @@ function Contact(props){
                                         onChange={(e) => SetName(e.target.value)}
                                         value={name}
 
-                                        ></input>
+                                        required></input>
                                 </div>
                             </div>
                             <div className='from-item col-6 emailform'>
@@ -94,7 +94,7 @@ function Contact(props){
                                         placeholder='Email'
                                         onChange={(e) => SetEmail(e.target.value)}
                                         value={email}
-                                        ></input>
+                                        required></input>
                                 </div>
                             </div>
                         </div>
@@ -107,7 +107,7 @@ function Contact(props){
                                         placeholder='Subject'
                                         onChange={(e) => SetSubject(e.target.value)}
                                         value={subject}
-                                        ></input>
+                                        required></input>
                                 </div>
                             </div>
                         </div>
@@ -121,7 +121,7 @@ function Contact(props){
                                      placeholder='Message'
                                      onChange={(e) => SetMessage(e.target.value)}
                                      value={message}
-                                     ></textarea>
+                                     required></textarea>
                                 </div>
                             </div>
                         </div>

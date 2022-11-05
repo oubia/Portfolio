@@ -52,9 +52,12 @@ function Home() {
             <div className='home-description'>
               <span className='tagline'>Welcome to my Portfolio</span>
               <h1>{`Hi I'm Oubia`}<span className='warp'> {text}</span></h1>
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever sincethe 1500s, when an unknown printer took a galley</p>
-              
-              
+              <p>
+              An innovative, creative software engineer with a bachelor's degree and over a year of experience in coding high-quality platforms and IA models.
+              With extensive expertise in both backend and front-end coding, And software engineering. Familiar with programming features and strong knowledge of Java, Python, JavaScript, and Flutter among other web and mobile-related solutions and database and operating systems.
+              Proficient at testing web applications and interacting with UI and UX teams.
+              </p>
+
               <a href='/contact/'>
               <button onClick={()=>console.log('connect selected')} className='connectBtn' >Let's connect<span> </span>
               </button>

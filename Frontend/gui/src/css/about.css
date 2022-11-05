@@ -116,6 +116,16 @@
     display:inline-block;
     font-family: 'Roboto Mono', monospace;
 }
+.about-content .personal-info .info-item p span a{
+    font-weight: 400;
+    color:var(--bg-light-gray);
+    margin-left: 4px;
+    display:inline-block;
+    font-family: 'Roboto Mono', monospace;
+    border-bottom: var(--light-main);
+
+}
+
 
 .about-content .skills {
     flex:0 0 40%;

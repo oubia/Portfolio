@@ -12,7 +12,7 @@ function Portfolio(props) {
     'Web Development',
     'Mobiel Development',
     'Machine learning',
-    'DataBase',
+    'Desktop',
     ];
 
     // const [all,setAll] = useState('')

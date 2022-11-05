@@ -1,5 +1,8 @@
 from django.urls import path
 from . import views
+
 urlpatterns = [
-    path('contact/',views.getContact,name='routes')
+    path('contact-data/',views.SendEmail,name='routes'),
+    path('project/',views.getProject,name='routes'),
+    path('resume/',views.getResume,name='routes'),
 ]
