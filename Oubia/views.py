@@ -8,7 +8,6 @@ from rest_framework import status
 from .serializers import ContactSerializer, DownloadPdfSerializer, ProjectSerializer, ResumeSerializer
 from .models import *
 # from django.core.mail import BadHeaderError, send_mail
-from django.http import HttpResponse
 
 # create a class for the Todo model viewsets
 
@@ -73,24 +72,7 @@ def getDownloadPdf(request):
 def SendEmail(request):
     data=request.data
     print(data)
-    '''try:
-        
-        try:
-           send_mail(
-           data['subject'],
-           data['message'],
-           data['email'],
-           ['dev.oubia@gmail.com'],
-           fail_silently=False
-        )
-        except BadHeaderError:
-            return HttpResponse('Invalid header found.')
-        print("email------------------------sent")
-        return HttpResponseRedirect('/contact/thanks/')
-        
-    except:
-        message= {'detail':'some error has been created while sending email'}
-        return Response(message,status=status.HTTP_400_BAD_REQUEST)'''
+   
     contact = Contact.objects.create(
         Name=data['name'],
         Email=data['email'],
