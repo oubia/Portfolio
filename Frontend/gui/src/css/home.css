@@ -175,7 +175,6 @@ body::-webkit-scrollbar-thumb:hover {
     }
     .home-image{
         width:90%;
-        margin:0px;
-
+        margin-bottom: 20%;
     }
 }

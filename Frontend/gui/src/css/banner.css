@@ -203,7 +203,7 @@ ul{
 @media (min-width:1300px){
     .AsidedevBottom{
         visibility: hidden;
-        bottom:0px;
+        bottom:-1px;
         width:270px;
         position:fixed;
         top:100%;
@@ -222,7 +222,7 @@ ul{
         left: 100%;
     }
     .AsidedevBottom{
-        bottom:0;
+        bottom:-1px;
         width:100%;
         position:fixed;
         overflow: hidden;

@@ -13,6 +13,7 @@ function About(props) {
   const [resmue,setResume] = useState('')
   
   const [value, setValue] = React.useState(0);
+  const [pdf,setPdf] = useState('')
   useEffect (()=>{
     fetch("http://127.0.0.1:8000/resume/")
     .then((response) => response.json())
@@ -25,8 +26,12 @@ function About(props) {
     React.useEffect(() => {
       setValue(100);
     });
-  
-  
+    
+    
+
+
+
+
     return (
       <section className='section-about' id='about'>
          
@@ -51,17 +56,19 @@ function About(props) {
                           <p>Age : <span>22</span></p>
                         </div>
                         <div className='info-item'>
-                          <p>Website : <span><a href="www.oubia.me"
+                          <p>Website : <span><a href="http://www.oubia.me/"
                           target="_blank"> www.oubia.me</a></span></p>
                         </div>
                         <div className='info-item'>
-                          <p>Email : <span>dev.oubia@gmail.com</span></p>
+                        
+                          <p>Email : <a href="mailto:dev.oubia@gmail.com?subject=Mail to Mohammed Oubia"><span>dev.oubia@gmail.com</span></a></p>
                         </div>
                         <div className='info-item'>
                           <p>Degree : <span>Bachelor</span></p>
                         </div>
                         <div className='info-item'>
-                          <p>Phone : <span>+212 643 49 03 38</span></p>
+                        
+                          <p>Phone : <a href="tel:+212775203979"><span>+212 775 203 979</span></a></p>
                         </div>
                         <div className='info-item'>
                           <p>City : <span>Essaouira Morocco</span></p>
@@ -72,7 +79,7 @@ function About(props) {
                     </div>
                     <div className="Aboutrow">
                       <div className='buttons'>
-                        <a href='#' className='downloadBtn'><span>Download CV</span> <FontAwesomeIcon className='FontAwesomeIconDownload' icon={faDownload} /> </a>
+                        <a href='http://127.0.0.1:8000/media/pdfs/M.pdf' target="_blank" className='downloadBtn' ><span>Download CV</span> <FontAwesomeIcon className='FontAwesomeIconDownload' icon={faDownload} /> </a>
                       </div>
                     </div>
                   </div>
@@ -237,13 +244,13 @@ function About(props) {
                 </div>
               </div>
 
-              <div class="about-content">
+              <div className="about-content">
                 <div className="Aboutrow">
                       <div className='devider'/>
                 </div>
               </div>
 
-                <div class="about-content">
+                <div className="about-content">
                   <div className="Aboutrow">
                     <div className='education'>
                       <h3 className='title'>Education</h3>
@@ -251,7 +258,7 @@ function About(props) {
                         <div className='timeline-div'>
                           <div className='timeline shadow-box'>
                           {Array.from(resmue).map((e) => (
-                              e.Type=="Education"?<div className='timeline-item'>
+                              e.Type=="Education"?<div className='timeline-item' key={e.id}>
                               <div className='circle-dot'></div>
                               <h3 className='timeline-date'>
                                 <FontAwesomeIcon className='calendar' icon={faCalendar} />{e.Date}                    
@@ -260,7 +267,7 @@ function About(props) {
                               <p className='timeline-text'>
                                 {e.Description}
                                </p>
-                            </div>:<div></div>
+                            </div>:<div key={e.id}></div>
                           ))}
                           </div>
                         </div>
@@ -273,7 +280,7 @@ function About(props) {
                           <div className='timeline shadow-box'>
                           {Array.from(resmue).map((e) => (
                               e.Type=="Experience"?
-                            <div className='timeline-item'>
+                            <div className='timeline-item' key={e.id}>
                               <div className='circle-dot'></div>
                               <h3 className='timeline-date'>
                                 <FontAwesomeIcon className='calendar' icon={faCalendar} />{e.Date}                         
@@ -282,7 +289,7 @@ function About(props) {
                               <p className='timeline-text'>
                               {e.Description}
                               </p>
-                            </div>:<></>
+                            </div>:<div key={e.id}></div>
                           ))}
                           </div>
                         </div>

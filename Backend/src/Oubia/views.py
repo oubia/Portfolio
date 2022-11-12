@@ -5,7 +5,7 @@ from rest_framework.decorators import api_view ,permission_classes
 from rest_framework import permissions
 from rest_framework import status
 
-from .serializers import ContactSerializer, ProjectSerializer, ResumeSerializer
+from .serializers import ContactSerializer, DownloadPdfSerializer, ProjectSerializer, ResumeSerializer
 from .models import *
 # from django.core.mail import BadHeaderError, send_mail
 from django.http import HttpResponse
@@ -48,6 +48,23 @@ def getResume(request):
     except:
         
         return Response('error')
+
+
+@api_view(['GET'])
+@permission_classes((permissions.AllowAny,))
+def getDownloadPdf(request):
+    print("getProject--------------------------------")
+    pdf = DownloadPdf.objects.all()
+    try:
+        serialisator = DownloadPdfSerializer(pdf,many=True)
+        return Response(serialisator.data)
+    except:
+        
+        return Response('error')
+
+
+
+
 
 
 

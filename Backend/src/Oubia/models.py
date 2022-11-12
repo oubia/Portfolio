@@ -1,5 +1,6 @@
 import os
 from django.db import models
+from django.conf import settings
 
 # Create your models here.
 
@@ -16,7 +17,7 @@ def vo_image_upload(inatance,filename):
 
 class Project(models.Model):
     Type = models.CharField(max_length=200)
-    myphoto = models.ImageField(db_column='MyProject', upload_to=vo_image_upload, blank=True, null=True)
+    myphoto = models.ImageField(upload_to="files")
     Languages = models.CharField(max_length=200)
     Client = models.CharField(max_length=200)
     Preview = models.CharField(max_length=200)
@@ -27,3 +28,8 @@ class Resume(models.Model):
     Date = models.CharField(max_length=200)
     Title = models.CharField(max_length=200)
     Description = models.TextField(max_length=1000)
+
+
+class DownloadPdf(models.Model):
+    title = models.CharField(max_length=200)
+    pdf = models.FileField(upload_to='pdfs')

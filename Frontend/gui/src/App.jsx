@@ -10,11 +10,25 @@ import Contact from './components/contact'
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import AnimationPage from './components/anim/animation'
 function App() {
-  
+  const [project,setProject] = useState('')
+  const datanew = []
+  useEffect (()=>{
+        fetch("http://127.0.0.1:8000/project/")
+        .then((response) => response.json())
+        .then((data) => {
+          setProject(data)
+          Array.from(project).map((e)=>{
+            if(e.Type == "Web Development"){
+                datanew.push(e);
+            }
+
+        })
+        });
+        
+  },[]);
   
   const sendEmail = (item) => {
     // let items = data["items"];
-   console.log(item)
     if(item['name']!= ''&& item['email']!='' && item['subject'] != '' && item['message']!=''){
       const requestOptions = {
         method: "POST",
@@ -57,7 +71,7 @@ function App() {
               <Route path="/" element={<Home />}/>
               <Route path="/about" element={<About  />} />
               <Route path="/services" element={<Services /> } />
-              <Route path="/portfolio" element={<Portfolio />} />
+              <Route path="/portfolio" element={<Portfolio data={project}/>} />
               <Route path="/contact" element={<Contact  sendEmail={sendEmail}/>} />
           </Routes>
         </AnimationPage>

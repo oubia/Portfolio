@@ -11,7 +11,7 @@ function Home() {
 
   const [loopNum,setLoopNum] = useState(0);
   const [isDeleting,setIsDeleting] = useState(false);
-  const toRotate = ['Web developer','Mobiel developer','Data analysist'];
+  const toRotate = ['Web developer','Mobile developer','Data analyst'];
   const [text,setText] = useState('');
   const [delta,setDelta] = useState(30 - Math.random()*100);
   const period = 2000;
@@ -59,7 +59,7 @@ function Home() {
               </p>
 
               <a href='/contact/'>
-              <button onClick={()=>console.log('connect selected')} className='connectBtn' >Let's connect<span> </span>
+              <button  className='connectBtn' >Let's connect<span> </span>
               </button>
               </a>
               <div className='social-links'>
