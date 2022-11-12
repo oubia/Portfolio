@@ -12,40 +12,39 @@ function Portfolio(props) {
 
     
     
-    let value = ''
     const slectedValue=(e)=>{
         let data = []
         setDb(' ')
-        if(e =='all'){
+        if(e ==='all'){
             setDb(props.data)
         }
-        else if(e=='web'){
+        else if(e ==='web'){
             props.data.map((item)=>{
-                if(item.Type =='Web Development'){
+                if(item.Type ==='Web Development'){
                     data.push(item)
                 }
             })
             setDb(data)
 
-        }else if(e=='mobile'){
+        }else if(e ==='mobile'){
             props.data.map((item)=>{
-                if(item.Type =='Mobiel Development'){
+                if(item.Type ==='Mobiel Development'){
                     data.push(item)
                 }
             })
             setDb(data)
             
-        }else if(e=='ml'){
+        }else if(e ==='ml'){
             props.data.map((item)=>{
-                if(item.Type =='Machine learning'){
+                if(item.Type ==='Machine learning'){
                     data.push(item)
                 }
             })
             setDb(data)
             
-        }else if(e=='desktop'){
+        }else if(e==='desktop'){
             props.data.map((item)=>{
-                if(item.Type =='Desktop'){
+                if(item.Type ==='Desktop'){
                     data.push(item)
                 }
             })
@@ -54,7 +53,7 @@ function Portfolio(props) {
         }
     }
     useEffect(() => {
-        if(db ==''){
+        if(db ===''){
             setDb(props.data)
         }
       });

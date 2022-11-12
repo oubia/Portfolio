@@ -12,6 +12,9 @@ class Contact(models.Model):
 
 
 
+def vo_image_upload(inatance,filename):
+    return os.path.join('Project',filename)
+
 class Project(models.Model):
     Type = models.CharField(max_length=200)
     myphoto = models.ImageField(upload_to="files")

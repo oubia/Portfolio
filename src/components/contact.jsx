@@ -14,7 +14,6 @@ function Contact(props){
   const [email, SetEmail] = useState("");
   const [subject, SetSubject] = useState("");
   const [message, SetMessage] = useState("");
-  const[popup,SetPopup] = useState(false)
 
   const SendEmailToBackend= () => {
     props.sendEmail({
