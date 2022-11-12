@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-4+h%zty3b!y19x8j^(6=wwi7ru(q$ec=&!vnqzhgjn1*f=@km#
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['http://www.oubia.me/']
+ALLOWED_HOSTS = ['portfolio-oubia.herokuapp.com']
 
 
 # Application definition
@@ -61,7 +61,7 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
-            os.path.join(BASE_DIR,'E:/homy/Portfolio/Portfolio/Frontend/gui/build')
+            os.path.join(BASE_DIR,'build')
         ],
         'APP_DIRS': True,
         'OPTIONS': {
@@ -128,7 +128,7 @@ STATIC_ROOT = os.path.join(BASE_DIR,'staticfiles')
 STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
 
 STATICFILES_DIRS =[
-    os.path.join(BASE_DIR,'E:/homy/Portfolio/Portfolio/Frontend/gui/build/static/')
+    os.path.join(BASE_DIR,'build/static/')
 ]
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
