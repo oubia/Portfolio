@@ -22,7 +22,6 @@ function App() {
       Accept: 'application/json', 'Content-Type': 'application/json'
         
     }
-    axios.defaults.headers.common['Authorization'] = AUTH_TOKEN;
 
     axios.defaults.baseURL = process.env.REACT_APP_BASE_UR
     await axios.get('/api/project/')
