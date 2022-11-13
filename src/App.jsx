@@ -17,7 +17,8 @@ function App() {
   useEffect (()=>{
     async function getData() {
     axios.defaults.headers ={
-        'Content-Type': 'application/json',
+      Accept: 'application/json', 'Content-Type': 'application/json'
+        
     }
     axios.get("http://127.0.0.1:8000/project/")
         .then((data) => {
