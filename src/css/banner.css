@@ -222,11 +222,11 @@ ul{
         left: 100%;
     }
     .AsidedevBottom{
-        bottom:-1px;
+        bottom:0px;
         width:100%;
         position:fixed;
         overflow: hidden;
-        height: 7%;
+        height: 10%;
         display: block;
         text-align: center;
         background-color: var(--background-color);
