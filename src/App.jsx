@@ -14,6 +14,8 @@ import AnimationPage from './components/anim/animation'
 function App() {
   const [project,setProject] = useState('')
   const datanew = []
+  axios.defaults.xsrfCookieName = 'csrftoken'
+  axios.defaults.xsrfHeaderName = 'X-CSRFToken'
   useEffect (()=>{
     async function getData() {
     axios.defaults.headers ={
@@ -25,7 +27,6 @@ function App() {
           setProject(data.data)
           Array.from(project).map((e)=>{
           })
-          console.log(`${process.env.API_URL}/project/`)
 
         }).catch(error => {
           console.log(error);
