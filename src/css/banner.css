@@ -257,7 +257,7 @@ ul{
     .wrapper .button{
         display:inline-block;
         height:80%;
-        width:80%;
+        width:90%;
         overflow:hidden;
         background:var(--bg-gray);
         border-radius:50px;
