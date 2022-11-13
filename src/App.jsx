@@ -13,7 +13,14 @@ function App() {
   const [project,setProject] = useState('')
   const datanew = []
   useEffect (()=>{
-        fetch("http://127.0.0.1:8000/project/")
+        fetch("http://127.0.0.1:8000/project/",{
+          method: 'GET',
+          headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json',
+            
+          },
+        })
         .then((response) => response.json())
         .then((data) => {
           setProject(data)

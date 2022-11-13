@@ -248,13 +248,16 @@ ul{
         display:flex;
         justify-content:space-evenly;
         align-items: center;
+        padding-top:2%;
+        padding-bottom:4%;
         
 
     }
+   
     .wrapper .button{
         display:inline-block;
-        height:90%;
-        width:90%;
+        height:80%;
+        width:80%;
         overflow:hidden;
         background:var(--bg-gray);
         border-radius:50px;

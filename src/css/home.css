@@ -148,11 +148,22 @@ body::-webkit-scrollbar-thumb:hover {
         margin-left:40px;
 
         height: 10%;
-        padding-left: 10px;
+        padding-left: 0px;
         
+    }
+    #main section .row .home-description{
+        padding-right: 5%;
+
     }
 }
 @media (max-width:800px){
+    #main{
+        margin-left:25px;
+
+        height: 10%;
+        padding-left: 0px;
+        
+    }
     #main section .row {
         display:block;
         position: relative;
@@ -162,7 +173,7 @@ body::-webkit-scrollbar-thumb:hover {
         flex:0 0 100%;
         max-width: 100%;
         padding-top: 15%;
-        padding-right: 8%;
+        padding-right: 5%;
 
     }
    

@@ -393,6 +393,7 @@
         flex: 0 0 100%;
         display: block;
         max-width: 100%;
+        padding-left: 0px;
     }
     .first-session{
         display: block;
@@ -408,9 +409,11 @@
         flex: 0 0 90%;
         max-width: 90%;
         margin-top: 40px;
-        margin-left: 15px;
+        margin-left: 0px;
         padding-right: 15px;
+        padding-left: 0px;
     }
+    
     .skills .skill-item {
         position: relative;
         height: 25%;
@@ -487,6 +490,7 @@
 }
 
 @media (max-width:550px){
+    
     .about-content .personal-info .first-session-aprt1{
         display: block;
 
@@ -508,7 +512,7 @@
         flex: 0 0 100%;
         max-width: 100%;
         margin-top: 40px;
-        padding-left: 15px;
+        padding-left: 0px;
         padding-right: 15px;
     }
     .skills .skill-item {
@@ -526,6 +530,13 @@
         width: 40%;
         height: 40%;
         margin-left: 30%;
+    }
+    .skills {
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        max-width: 100%;
+        text-align: center;
     }
     .skills .skill-item h4{
         font-size: 25px;

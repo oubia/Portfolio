@@ -15,7 +15,14 @@ function About(props) {
   const [value, setValue] = React.useState(0);
   const [pdf,setPdf] = useState('')
   useEffect (()=>{
-    fetch("http://127.0.0.1:8000/resume/")
+    fetch("http://127.0.0.1:8000/resume/",{
+      method: 'GET',
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json',
+        
+      },
+    })
     .then((response) => response.json())
     .then((data) => {
       setResume(data)
