@@ -15,7 +15,7 @@ function About(props) {
   const [value, setValue] = React.useState(0);
   const [pdf,setPdf] = useState('')
   useEffect (()=>{
-    fetch("http://127.0.0.1:8000/resume/",{
+    fetch("http://127.0.0.1:8000/api/resume/",{
       method: 'GET',
       body: JSON.stringify(),
       credentials: "same-origin", //include, same-origin

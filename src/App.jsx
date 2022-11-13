@@ -22,7 +22,7 @@ function App() {
       Accept: 'application/json', 'Content-Type': 'application/json'
         
     }
-    axios.get("http://127.0.0.1:8000/project/")
+    axios.get("http://127.0.0.1:8000/api/project/")
         .then((data) => { 
           setProject(data.data)
           Array.from(project).map((e)=>{
@@ -47,7 +47,7 @@ function App() {
         },
         body: JSON.stringify(item),
       };
-      fetch("http://127.0.0.1:8000/contact-data/", requestOptions)
+      fetch("http://127.0.0.1:8000/api/contact-data/", requestOptions)
         .then((response) => response.json())
         .then((data) => {
           alert("Thank you your email had been sent successfuly");
