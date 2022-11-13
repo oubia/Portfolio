@@ -22,7 +22,7 @@ function App() {
       Accept: 'application/json', 'Content-Type': 'application/json'
         
     }
-    axios.get("https://portfolio-oubia.herokuapp.com/api/project/")
+    axios.get("http://127.0.0.1:8000/api/project/")
         .then((data) => { 
           setProject(data.data)
           Array.from(project).map((e)=>{
