@@ -12,7 +12,6 @@
     "framer-motion": "^7.5.4",
     "gestalt": "^77.0.2",
     "gestalt-datepicker": "^77.0.2",
-    "package-json": "^8.1.0",
     "react": "^18.2.0",
     "react-animated-cursor": "^2.5.2",
     "react-bootstrap-icons": "^1.8.4",
@@ -20,10 +19,11 @@
     "react-circular-progressbar": "^2.1.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.6.0",
+    "react-loading-skeleton": "^3.1.0",
     "react-router-dom": "^6.4.2",
     "react-scripts": "5.0.1",
-    "web-vitals": "^1.1.2"
-
+    "reactjs-popup": "^2.0.5",
+    "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "node --max_old_space_size=4096 node_modules/.bin/react-scripts start",

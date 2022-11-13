@@ -140,7 +140,7 @@
 @media(max-width:800px){
     
     .contact-form{
-        flex: 0 0 95%;
+        flex: 0 0 100%;
         max-width: 95%;
         margin-top: 30px;
         margin-left:0px;
