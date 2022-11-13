@@ -89,7 +89,7 @@ function Portfolio(props) {
                 {Array.from(db).map((e) => (
                 <div className='portfolio-item' onClick={() => setOpen(true)}  key={e.id.toString()}>
                 <div className='portfolio-item-inner'>
-                    <img className='portfolioImage' src={`http://127.0.0.1:8000/${e.myphoto}`} />
+                    <img className='portfolioImage' src={`http://127.0.0.1:8000/api${e.myphoto}`} />
                     <div className='info-item-all'>
                         <p><FontAwesomeIcon className='fontawsomeAll' icon={faExternalLink} />
                         View: 

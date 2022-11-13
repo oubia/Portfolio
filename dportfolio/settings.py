@@ -25,7 +25,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-4+h%zty3b!y19x8j^(6=wwi7ru(q$ec=&!vnqzhgjn1*f=@km#'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
@@ -150,7 +150,9 @@ REST_FRAMEWORK = {
 }
 
 # core for react api
-
+CORS_ORIGIN_WHITELIST = [
+    'https://localhost:3000',
+]
 
 # Option 2
 CORS_ORIGIN_ALLOW_ALL = True

@@ -12,7 +12,6 @@ from .models import *
 # create a class for the Todo model viewsets
 
 @api_view(['GET'])
-@permission_classes((permissions.AllowAny,))
 def getContact(request):
     print("getcontact--------------------------------")
     contact = Contact.objects.all()
@@ -25,7 +24,6 @@ def getContact(request):
 
 
 @api_view(['GET'])
-@permission_classes((permissions.AllowAny,))
 def getProject(request):
     print("getProject--------------------------------")
     project = Project.objects.all()
@@ -37,7 +35,6 @@ def getProject(request):
         return Response('error')
 
 @api_view(['GET'])
-@permission_classes((permissions.AllowAny,))
 def getResume(request):
     print("getProject--------------------------------")
     resume = Resume.objects.all()
@@ -50,7 +47,6 @@ def getResume(request):
 
 
 @api_view(['GET'])
-@permission_classes((permissions.AllowAny,))
 def getDownloadPdf(request):
     print("getProject--------------------------------")
     pdf = DownloadPdf.objects.all()
@@ -68,7 +64,6 @@ def getDownloadPdf(request):
 
 
 @api_view(['POST'])
-@permission_classes((permissions.AllowAny,))
 def SendEmail(request):
     data=request.data
     print(data)
