@@ -22,7 +22,10 @@ function App() {
       Accept: 'application/json', 'Content-Type': 'application/json'
         
     }
-    await axios.get("http://127.0.0.1:8000/api/project/")
+    axios.defaults.headers.common['Authorization'] = AUTH_TOKEN;
+
+    axios.defaults.baseURL = process.env.REACT_APP_BASE_UR
+    await axios.get('/api/project/')
         .then((data) => { 
           setProject(data.data)
           Array.from(project).map((e)=>{
