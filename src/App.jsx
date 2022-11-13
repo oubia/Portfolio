@@ -40,7 +40,9 @@ function App() {
       const requestOptions = {
         method: "POST",
         headers: {
-          "content-type": "application/json",
+          'Accept': 'application/json',
+          'Content-Type': 'application/json',
+          mode: "cors"
         },
         body: JSON.stringify(item),
       };
