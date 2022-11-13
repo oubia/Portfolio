@@ -1,4 +1,6 @@
 import React,{useEffect,useState} from 'react';
+import axios from "axios";
+
 import Aside from './components/aside';
 import BottomBanner from './components/bottomBanner';
 import Home from './components/home'
@@ -13,25 +15,20 @@ function App() {
   const [project,setProject] = useState('')
   const datanew = []
   useEffect (()=>{
-        fetch("http://127.0.0.1:8000/project/",{
-          method: 'GET',
-          headers: {
-            'Accept': 'application/json',
-            'Content-Type': 'application/json',
-            
-          },
-        })
-        .then((response) => response.json())
+    async function getData() {
+    axios.defaults.headers ={
+        'Content-Type': 'application/json',
+    }
+    axios.get("http://127.0.0.1:8000/project/")
         .then((data) => {
-          setProject(data)
+          setProject(data.data)
           Array.from(project).map((e)=>{
-            if(e.Type == "Web Development"){
-                datanew.push(e);
-            }
-
-        })
+          })
+        }).catch(error => {
+          console.log(error);
         });
-        
+      }
+      getData()
   },[]);
   
   const sendEmail = (item) => {
