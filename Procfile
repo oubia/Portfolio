@@ -1,3 +1,3 @@
 release: python manage.py migrate
-web: gunicorn dportfolio.wsgi:app
+web: gunicorn dportfolio.wsgi:dportfolio
 
