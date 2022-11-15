@@ -13,20 +13,21 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import AnimationPage from './components/anim/animation'
 function App() {
   const [project,setProject] = useState('')
-  axios.defaults.xsrfCookieName = 'csrftoken'
-  axios.defaults.xsrfHeaderName = 'X-CSRFToken'
-  useEffect (()=>{
-    async function getData() {
-    axios.headers ={
-      'accept': 'application/json', 
-      "content-type": "application/json",
-      'Access-Control-Allow-Origin': '*',
-      mode: 'no-cors'
 
-        
-    }
+  useEffect (()=>{
+
     // axios.defaults.baseURL = process.env.REACT_APP_BASE_URL
-    await axios.get("http://127.0.0.1:8000/api/project/")
+        fetch("http://127.0.0.1:8000/api/project/",{
+          method: 'GET',
+          // credentials: "same-origin",
+          headers: { 
+            'Access-Control-Allow-Origin': '*',
+            'accept': 'application/json',
+            'Content-Type': 'application/json',
+            // mode: 'no-cors'
+          },
+            },
+        )
         .then((data) => { 
           setProject(data.data)
           Array.from(project).map((e)=>{
@@ -35,8 +36,8 @@ function App() {
         }).catch(error => {
           console.log(error);
         });
-      }
-      getData()
+
+        
   },[]);
   
   async function sendEmail(item){
