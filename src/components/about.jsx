@@ -19,7 +19,7 @@ function About(props) {
       method: 'GET',
       body: JSON.stringify(),
       credentials: "same-origin", //include, same-origin
-      headers: {Accept: 'application/json', 'Content-Type': 'application/json',},
+      headers: {  'accept': 'application/json', 'Content-Type': 'application/json',},
         
       },
     )

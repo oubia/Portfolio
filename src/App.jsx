@@ -18,7 +18,7 @@ function App() {
   useEffect (()=>{
     async function getData() {
     axios.defaults.headers ={
-      Accept: 'application/json', 'Content-Type': 'application/json'
+      'accept': 'application/json', 'Content-Type': 'application/json'
         
     }
     // axios.defaults.baseURL = process.env.REACT_APP_BASE_URL
@@ -41,7 +41,7 @@ function App() {
       const requestOptions = {
         method: "POST",
         headers: {
-          'Accept': 'application/json',
+          'accept': 'application/json',
           'Content-Type': 'application/json',
           mode: "cors"
         },
