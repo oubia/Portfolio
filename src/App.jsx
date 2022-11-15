@@ -13,7 +13,6 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import AnimationPage from './components/anim/animation'
 function App() {
   const [project,setProject] = useState('')
-  const datanew = []
   axios.defaults.xsrfCookieName = 'csrftoken'
   axios.defaults.xsrfHeaderName = 'X-CSRFToken'
   useEffect (()=>{
