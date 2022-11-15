@@ -7,4 +7,4 @@ urlpatterns = [
     path('project/',views.getProject,name='routes'),
     path('resume/',views.getResume,name='routes'),
     path('download/',views.getDownloadPdf,name='routes'),
-]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
