@@ -17,9 +17,9 @@ function App() {
   axios.defaults.xsrfHeaderName = 'X-CSRFToken'
   useEffect (()=>{
     async function getData() {
-    axios.defaults.headers ={
+    axios.headers ={
       'accept': 'application/json', 
-      'Content-Type': 'application/json',
+      "content-type": "application/json",
       'Access-Control-Allow-Origin': '*',
       mode: 'no-cors'
 
