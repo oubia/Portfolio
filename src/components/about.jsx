@@ -17,9 +17,12 @@ function About(props) {
   useEffect (()=>{
     fetch("http://127.0.0.1:8000/api/resume/",{
       method: 'GET',
-      body: JSON.stringify(),
       credentials: "same-origin", //include, same-origin
-      headers: {  'accept': 'application/json', 'Content-Type': 'application/json',},
+      headers: { 
+      'Access-Control-Allow-Origin': '*',
+      'accept': 'application/json',
+      'Content-Type': 'application/json',
+      mode: 'no-cors'},
         
       },
     )

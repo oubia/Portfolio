@@ -18,7 +18,11 @@ function App() {
   useEffect (()=>{
     async function getData() {
     axios.defaults.headers ={
-      'accept': 'application/json', 'Content-Type': 'application/json'
+      'accept': 'application/json', 
+      'Content-Type': 'application/json',
+      'Access-Control-Allow-Origin': '*',
+      mode: 'no-cors'
+
         
     }
     // axios.defaults.baseURL = process.env.REACT_APP_BASE_URL
@@ -41,9 +45,11 @@ function App() {
       const requestOptions = {
         method: "POST",
         headers: {
+          'Access-Control-Allow-Origin': '*',
           'accept': 'application/json',
           'Content-Type': 'application/json',
-          mode: "cors"
+          mode: 'no-cors'
+
         },
         body: JSON.stringify(item),
       };
