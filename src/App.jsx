@@ -22,9 +22,7 @@ function App() {
           // credentials: "same-origin",
           headers: { 
             'Access-Control-Allow-Origin': '*',
-            'accept': 'application/json',
-            'Content-Type': 'application/json',
-            // mode: 'no-cors'
+            'Access-Control-Allow-Headers': 'Origin, X-Requested-With, Content-Type, Accept'
           },
             },
         )
