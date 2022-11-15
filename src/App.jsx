@@ -19,10 +19,8 @@ function App() {
     // axios.defaults.baseURL = process.env.REACT_APP_BASE_URL
         fetch("http://127.0.0.1:8000/api/project/",{
           method: 'GET',
-          // credentials: "same-origin",
           headers: { 
-            'Access-Control-Allow-Origin': '*',
-            'Access-Control-Allow-Headers': 'Origin, X-Requested-With, Content-Type, Accept'
+            
           },
             },
         )
