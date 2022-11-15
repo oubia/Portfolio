@@ -22,8 +22,8 @@ function App() {
       Accept: 'application/json', 'Content-Type': 'application/json'
         
     }
-    // axios.defaults.baseURL = process.env.REACT_APP_BASE_URL
-    await axios.get("https://127.0.0.1:8000/api/project/")
+    axios.defaults.baseURL = process.env.REACT_APP_BASE_URL
+    await axios.get("/api/project/")
         .then((data) => { 
           setProject(data.data)
           Array.from(project).map((e)=>{

@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-4+h%zty3b!y19x8j^(6=wwi7ru(q$ec=&!vnqzhgjn1*f=@km#
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['.*']
+ALLOWED_HOSTS = ['portfolio-oubia.herokuapp.com','127.0.0.1:8000','localhost','.herokuapp.com','https://portfolio-oubia.herokuapp.com/portfolio']
 
 
 # Application definition
