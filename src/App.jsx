@@ -17,7 +17,7 @@ function App() {
   useEffect (()=>{
 
     // axios.defaults.baseURL = process.env.REACT_APP_BASE_URL
-        fetch("http://127.0.0.1:8000/api/project/",{
+        fetch("https://portfolio-oubia.herokuapp.com/api/project/",{
           method: 'GET',
           headers: { 
             
@@ -51,7 +51,7 @@ function App() {
         },
         body: JSON.stringify(item),
       };
-      await fetch("http://127.0.0.1:8000/api/contact-data/", requestOptions)
+      await fetch("https://portfolio-oubia.herokuapp.com/api/contact-data/", requestOptions)
         .then((response) => response.json())
         .then((data) => {
           alert("Thank you your email had been sent successfuly");
