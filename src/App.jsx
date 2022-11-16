@@ -26,7 +26,7 @@ function App() {
         )
         .then((response) => response.json())
         .then((data) => { 
-          setProject(data.data)
+          setProject(data)
           Array.from(project).map((e)=>{
           })
           console.log(data)

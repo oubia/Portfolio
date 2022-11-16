@@ -15,7 +15,7 @@ function About(props) {
   const [value, setValue] = React.useState(0);
   const [pdf,setPdf] = useState('')
   useEffect (()=>{
-    fetch("http://127.0.0.1:8000/api/resume/",{
+    fetch("https://portfolio-oubia.herokuapp.com/api/resume/",{
       method: 'GET',
       credentials: "same-origin", //include, same-origin
       headers: { 
