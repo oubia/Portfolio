@@ -29,7 +29,7 @@ function App() {
           setProject(data.data)
           Array.from(project).map((e)=>{
           })
-          console.log("inside fetch")
+          console.log(data)
         }).catch(error => {
           console.log(error);
         });
