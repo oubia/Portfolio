@@ -24,6 +24,7 @@ function App() {
           },
             },
         )
+        .then((response) => response.json())
         .then((data) => { 
           setProject(data.data)
           Array.from(project).map((e)=>{
