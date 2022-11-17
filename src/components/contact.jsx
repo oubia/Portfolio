@@ -45,8 +45,8 @@ function Contact(props){
                         <div className='icon'>
                             <FontAwesomeIcon className='fontawsome' icon={faPhone} />
                         </div>
-                        <h4>call Us on</h4>
-                        <p>+212 643 490 338</p>
+                        <h4>Call Me On</h4>
+                        <p><a href="https://api.whatsapp.com/send?phone=+212775203979&text=Hi%20There!" target="_blank"><span>+212 775 203 979</span></a></p>
                     </div>
                     <div className='contact-info-item'>
                         <div className='icon'>
@@ -60,14 +60,15 @@ function Contact(props){
                                 <FontAwesomeIcon className='fontawsome' icon={faMessage} />
                             </div>
                             <h4>Email</h4>
-                            <p>dev.oubia@gmail.com</p>
+                            <p><a href="mailto:dev.oubia@gmail.com?subject=Mail to Mohammed Oubia">dev.oubia@gmail.com</a></p>
                     </div>
                     <div className='contact-info-item'>
                         <div className='icon'>
                                 <FontAwesomeIcon className='fontawsome' icon={faEarth} />
                             </div>
                             <h4>Website</h4>
-                            <p>www.domain.com</p>
+                            <p><a href="http://www.oubia.me/"
+                          target="_blank"> www.oubia.me</a></p>
                     </div>
                 </div>
                 <div className='Aboutrow'>

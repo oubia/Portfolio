@@ -33,18 +33,7 @@ function App() {
   async function sendEmail(item){
     // let items = data["items"];
     if(item['name']!= ''&& item['email']!='' && item['subject'] != '' && item['message']!=''){
-      const requestOptions = {
-        method: "POST",
-        headers: {
-          'Access-Control-Allow-Origin': '*',
-          'accept': 'application/json',
-          'Content-Type': 'application/json',
-          mode: 'no-cors'
-
-        },
-        body: JSON.stringify(item),
-      };
-      await fetch("https://portfolio-oubia.herokuapp.com/api/contact-data/", requestOptions)
+        await fetch("https://portfolio-oubia.herokuapp.com/api/contact-data/", {method: "POST",})
         .then((response) => response.json())
         .then((data) => {
           alert("Thank you your email had been sent successfuly");

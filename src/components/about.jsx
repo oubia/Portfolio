@@ -68,7 +68,7 @@ function About(props) {
                         </div>
                         <div className='info-item'>
                         
-                          <p>Phone : <a href="tel:+212775203979"><span>+212 775 203 979</span></a></p>
+                          <p>Phone : <a href="https://api.whatsapp.com/send?phone=+212775203979&text=Hi%20There!" target="_blank"><span>+212 775 203 979</span></a></p>
                         </div>
                         <div className='info-item'>
                           <p>City : <span>Essaouira Morocco</span></p>

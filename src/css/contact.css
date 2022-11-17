@@ -49,6 +49,12 @@
     font-size:15px;
 
 }
+.contact-info-item p a{
+    font-family: 'Roboto Mono', monospace;
+    color: var(--bg-light-gray);
+    font-size:15px;
+
+}
 .contact-form{
     flex: 0 0 100%;
     max-width: 100%;
