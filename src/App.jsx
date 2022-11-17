@@ -17,19 +17,12 @@ function App() {
   useEffect (()=>{
 
     // axios.defaults.baseURL = process.env.REACT_APP_BASE_URL
-        fetch("https://portfolio-oubia.herokuapp.com/api/project/",{
-          method: 'GET',
-          headers: { 
-            
-          },
-            },
-        )
+        fetch("https://portfolio-oubia.herokuapp.com/api/project/")
         .then((response) => response.json())
         .then((data) => { 
           setProject(data)
           Array.from(project).map((e)=>{
           })
-          console.log(data)
         }).catch(error => {
           console.log(error);
         });

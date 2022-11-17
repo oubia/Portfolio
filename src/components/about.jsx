@@ -15,17 +15,7 @@ function About(props) {
   const [value, setValue] = React.useState(0);
   const [pdf,setPdf] = useState('')
   useEffect (()=>{
-    fetch("https://portfolio-oubia.herokuapp.com/api/resume/",{
-      method: 'GET',
-      credentials: "same-origin", //include, same-origin
-      headers: { 
-      'Access-Control-Allow-Origin': '*',
-      'accept': 'application/json',
-      'Content-Type': 'application/json',
-      mode: 'no-cors'},
-        
-      },
-    )
+    fetch("https://portfolio-oubia.herokuapp.com/api/resume/")
     .then((response) => response.json())
     .then((data) => {
       setResume(data)
@@ -89,7 +79,7 @@ function About(props) {
                     </div>
                     <div className="Aboutrow">
                       <div className='buttons'>
-                        <a href='http://127.0.0.1:8000/media/pdfs/M.pdf' target="_blank" className='downloadBtn' ><span>Download CV</span> <FontAwesomeIcon className='FontAwesomeIconDownload' icon={faDownload} /> </a>
+                        <a href='https://portfolio-oubia.herokuapp.com/api/media/pdfs/M.pdf' target="_blank" className='downloadBtn' ><span>Download CV</span> <FontAwesomeIcon className='FontAwesomeIconDownload' icon={faDownload} /> </a>
                       </div>
                     </div>
                   </div>
