@@ -58,7 +58,7 @@ function Home() {
               Proficient at testing web applications and interacting with UI and UX teams.
               </p>
 
-              <a href='/contact/'>
+              <a href='/contact'>
               <button  className='connectBtn' >Let's connect<span> </span>
               </button>
               </a>
